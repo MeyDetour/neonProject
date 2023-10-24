@@ -1,16 +1,17 @@
 
 body {
     display: flex;
-    height:100vh;
+    height: 100vh;
     font-family: Ubuntu;
     flex-direction: column;
-margin: 0;
+    margin: 0;
     background-color: #c2bdbd;
     overflow-x: hidden;
     overflow-y: hidden;
 
 }
-.nav1{
+
+.nav1 {
     background: black;
     width: 100vw;
     height: 10vh;
@@ -19,6 +20,7 @@ margin: 0;
     filter: brightness(2);
     position: relative;
 }
+
 .nav2 {
     display: flex;
     flex-direction: column;
@@ -33,32 +35,36 @@ margin: 0;
     filter: drop-shadow(0 0 15px #4d4d4d) drop-shadow(0 0 50px #4d4d4d) contrast(2) brightness(2);
     z-index: 1;
 }
-div>#neon{
+
+div > #neon {
     position: absolute;
     left: 45%;
 
 }
-.fond{
-width: 100vw;
-position: relative;
+
+.fond {
+    width: 100vw;
+    position: relative;
     height: 90vh;
 }
-.lien{
+
+.lien {
     z-index: 1;
     text-decoration: none;
     color: white;
 
     margin-top: 8%;
     margin-bottom: 8%;
-    padding-left : 11%;
+    padding-left: 11%;
     padding-top: 8%;
     padding-bottom: 8%;
     width: 97%;
     height: 15%;
 
-    transition: background-color ;
-display: none;
+    transition: background-color;
+    display: none;
 }
+
 .lien:hover {
     background-color: #444444;
     width: 108%;
@@ -68,24 +74,30 @@ display: none;
     z-index: 1;
 
 }
-.bouton{
+
+.bouton {
     font-size: 4em;
 
 }
-a{
+
+a {
     text-decoration: none;
 }
-.out{
-width: 16%;
+
+.out {
+    width: 16%;
     animation: sorti 1s ease 0s 1 normal forwards;
 }
-.out>.lien{
+
+.out > .lien {
     display: none;
 }
-.in>.lien{
+
+.in > .lien {
     display: block;
 }
-.in{
+
+.in {
     width: 16%;
     padding-top: 3%;
     animation: entrer 1s ease 0s 1 normal forwards;
@@ -114,5 +126,42 @@ width: 16%;
         opacity: 0;
         transform: rotateY(-70deg);
         transform-origin: left;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .in {
+        width: 100%;
+    }
+    .lien {
+        z-index: 1;
+        text-decoration: none;
+        color: white;
+
+        margin-top: 2%;
+        margin-bottom: 1%;
+        padding-left: 8%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        width: 50%;
+        height: auto;
+
+        transition: background-color;
+        display: none;
+    }
+    .nav2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .lien:hover {
+        color: palevioletred;
+        text-shadow: 0px 0px 25px palevioletred;
+        background-color: transparent;
+        width: 50%;
+        height: auto;
+
+        z-index: 1;
+
     }
 }
