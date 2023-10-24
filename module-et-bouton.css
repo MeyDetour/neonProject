@@ -66,7 +66,7 @@ body {
 
 /* DIFFERENT TYPE OF STYLE*/
 .boutonStyle {
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 3% 5%;
     font-size: 1.8em;
     font-family: Ubuntu;
@@ -288,6 +288,86 @@ border-radius: 60px;
 .styleButton21:hover{
     background: linear-gradient(to top, #5662E8 0, #0068F9 70% , #1A91EF 120% );
 
+}
+.styleButton22{
+    background-color: #0875FC;
+    color: white;
+    border: 0;
+}
+.styleButton22:hover{
+    filter: brightness(1.5);
+}
+.styleButton23{
+    font-weight: bolder;
+    background-color: transparent;
+    border: black 3px solid ;
+}
+.styleButton24{
+    color: white;
+    border: 0;
+    font-weight: bolder;
+    background-color: #E6443B;
+}
+.styleButton24:hover{
+    border: #E6443B 2px solid;
+    background-color: transparent;
+    color: #E6443B;
+}
+.styleButton25{
+    color: white;
+    font-weight: 700;
+    border: #3a8a8f 3px solid;
+    background: linear-gradient(to top, #4B9DA1 0% , #50A8AD 100%);
+}
+.styleButton26{
+    background-color: #2763F0;
+    color: white;
+    border: 0;
+}
+.styleButton26:hover{
+    filter: brightness(0.9);
+}
+.styleButton27{
+    color: white;
+    font-weight: bolder;
+    background-color: black;
+}
+.styleButton27:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 25px grey;
+}
+.styleButton28{
+    border: black 5px solid;
+    font-weight: bold;
+    background-color: transparent;
+}
+.styleButton28:hover{
+    transform: scale(98%) translateY(-5px);
+    background-color: black;
+    color: white;
+    box-shadow: 0px 10px 20px #c2c2c2;
+}
+.styleButton29 {
+    border: 0;
+    position: relative;
+    background-image: radial-gradient(100% 100% at 100% 0%, #5adaff 0, #5468ff 100%);
+
+    box-shadow:  0px 10px  #474FB5, 0px 10px 20px #6b6b6b;
+
+}
+
+.styleButton29:hover{
+transform: translateY(-5px);
+    box-shadow:  0px 10px #5d65c5, 0px 10px 30px #6b6b6b;
+}
+.styleButton30{
+    background-color: white;
+    box-shadow: 0px 10px #efefef, 0px 10px 20px #565656;
+    border: 0;
+}
+.styleButton30:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px #efefef, 0px 15px 30px #565656;
 }
 /*BOUTON rectangulaire */
 .buttonLRTB {
