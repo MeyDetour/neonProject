@@ -1,4 +1,4 @@
-let burger = document.querySelector('.bouton')
+let burger = document.querySelector('.boutonburger')
 let nav2 = document.querySelector('.nav2')
 const fond = document.querySelector('.fond')
 

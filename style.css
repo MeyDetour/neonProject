@@ -9,14 +9,295 @@ body {
     overflow-x: hidden;
 }
 
+.AccueilPage {
+    overflow-y: hidden;
+    background-image: linear-gradient(133deg, #000000 33.33%, #8f0099 33.33%, #8f0099 50%, #000000 50%, #000000 83.33%, #8f0099 83.33%, #8f0099 100%);
+    background-size: 16.41px 17.60px;
+
+
+}
+
+.index {
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: #757575;
+}
+
+.index-gauche {
+    height: 100%;
+    position: relative;
+    width: 60%;
+    font-size: 10em;
+    background-color: #372c48;
+    animation: slideleft 2s ease 0s 1 normal forwards;
+}
+
+@keyframes slideleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.index-droit {
+    width: 40%;
+    height: 100%;
+
+}
+
+.index-neonbar {
+    width: 100vw;
+    height: 2%;
+    position: absolute;
+    z-index: 1;
+    filter: brightness(2);
+    display: none;
+    animation: neonbar-right-entrance 2s ease 0s 1 normal forwards;
+
+}
+
+.exit-left {
+    animation: neonbar-right-exit 2s ease 0s 1 normal forwards;
+}
+
+.index-neonbar1, .index-neonbar3 {
+    background-color: #3f2f59;
+    box-shadow: 0px 0px 4em 20px #3f2f59;
+}
+
+.index-neonbar2, .index-neonbar4 {
+    background-color: #b7b7b7;
+    box-shadow: 0px 0px 4em 20px #b7b7b7;
+}
+
+.index-neonbar1 {
+    top: 20%;
+}
+
+.index-neonbar2 {
+    top: 35%;
+}
+
+.index-neonbar3 {
+    top: 50%;
+}
+
+.index-neonbar4 {
+    top: 65%;
+}
+
+@keyframes neonbar-right-entrance {
+    0% {
+        opacity: 0;
+        transform: rotateY(70deg);
+        transform-origin: right;
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateY(0);
+        transform-origin: right;
+    }
+}
+
+@keyframes neonbar-right-exit {
+    0% {
+        opacity: 1;
+        transform: rotateY(0);
+        transform-origin: left;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotateY(-70deg);
+        transform-origin: left;
+    }
+}
+
+.index-neon-title {
+    color: #b7b7b7;
+    text-shadow: 0px 0px 25px #b7b7b7;
+    filter: brightness(2);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.index-droit-blacksquare1, .index-droit-blacksquare2 {
+    height: 50%;
+    width: 100%;
+    background-color: #1d1d1d;
+}
+
+.index-droit-blacksquare1 {
+    animation: topentrance 1.5s ease 0s 1 normal forwards;
+
+}
+
+.index-droit-blacksquare2 {
+    animation: bottomentrance 1.5s ease 0s 1 normal forwards;
+
+}
+
+@keyframes topentrance {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+        transform: translateY(-250px);
+    }
+
+    38% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    55% {
+        animation-timing-function: ease-in;
+        transform: translateY(-65px);
+    }
+
+    72% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+
+    81% {
+        animation-timing-function: ease-in;
+        transform: translateY(-28px);
+    }
+
+    90% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+
+    95% {
+        animation-timing-function: ease-in;
+        transform: translateY(-8px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bottomentrance {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+        transform: translateY(250px);
+    }
+
+    38% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    55% {
+        animation-timing-function: ease-in;
+        transform: translateY(65px);
+    }
+
+    72% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+
+    81% {
+        animation-timing-function: ease-in;
+        transform: translateY(28px);
+    }
+
+    90% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+
+    95% {
+        animation-timing-function: ease-in;
+        transform: translateY(8px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
+}
+
+/*========================Fin de lq page d'accueil debut de la description des navbar ============================================*/
+
 .nav1 {
     background: black;
-    width: 100vw;
+    width: 87vw;
     height: 10vh;
+    position: relative;
     color: palevioletred;
     text-shadow: 0px 0px 25px palevioletred;
     filter: brightness(2);
-    position: relative;
+    box-shadow: 7em 0px 0px #101010;
+    border-radius: 0px 60px 60px 0px;
+z-index: 1;
+    animation: pulseheart 2s ease 0s 1 normal forwards;
+}
+.nav1::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0%;
+    right: 0%;
+    z-index: -2;
+    background-color: #0d6dbb;
+}
+
+.imagepdp {
+    background-image: url("image/pdp.png");
+    width: 45px;
+    height: 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 20%;
+    border-radius: 50%;
+    right: -7%;
+}
+
+
+
+@keyframes pulseheart {
+    0% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+        transform-origin: center center;
+    }
+
+    10% {
+        animation-timing-function: ease-in;
+        transform: scale(0.91);
+    }
+
+    17% {
+        animation-timing-function: ease-out;
+        transform: scale(0.98);
+    }
+
+    33% {
+        animation-timing-function: ease-in;
+        transform: scale(0.87);
+    }
+
+    45% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+    }
 }
 
 .nav2 {
@@ -31,7 +312,7 @@ body {
     height: 100vh;
     background-color: #000000;
     filter: drop-shadow(0 0 15px #4d4d4d) drop-shadow(0 0 50px #4d4d4d) contrast(2) brightness(2);
-    z-index: 1;
+    z-index: 2;
 }
 
 div > #neon {
@@ -73,7 +354,7 @@ div > #neon {
 
 }
 
-.bouton {
+.boutonburger {
     font-size: 4em;
 
 }
@@ -131,6 +412,11 @@ a {
     .in {
         width: 100%;
     }
+
+    .boutonburger {
+        display: block;
+    }
+
     .lien {
         z-index: 1;
         text-decoration: none;
@@ -147,11 +433,13 @@ a {
         transition: background-color;
         display: none;
     }
+
     .nav2 {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
+
     .lien:hover {
         color: palevioletred;
         text-shadow: 0px 0px 25px palevioletred;
