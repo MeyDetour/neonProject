@@ -1,7 +1,7 @@
 let temps = 1500
 
 function neonbar_entrance(nb) {
-    if (nb <= 4) {
+    if (nb  <= 4) {
         let barre = document.querySelector('.index-neonbar' + nb)
         barre.classList.remove('exit-left')
         barre.style.display = 'block'
@@ -36,7 +36,7 @@ setInterval(() => {
     console.log('deb')
     neonbar_entrance(1)
     console.log('fin')
-}, 3200)
+}, 3500)
 
 
 

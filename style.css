@@ -5,16 +5,13 @@ body {
     font-family: Ubuntu;
     flex-direction: column;
     margin: 0;
-    background-color: #c2bdbd;
+    background-color: #444654;
     overflow-x: hidden;
 }
 
 .AccueilPage {
     overflow-y: hidden;
-    background-image: linear-gradient(133deg, #000000 33.33%, #8f0099 33.33%, #8f0099 50%, #000000 50%, #000000 83.33%, #8f0099 83.33%, #8f0099 100%);
-    background-size: 16.41px 17.60px;
-
-
+    background-color: #d5d5d5;
 }
 
 .index {
@@ -143,6 +140,36 @@ body {
 
 }
 
+@keyframes neonbar-slice-translation {
+    0% {
+        transform: translateX(-15px);
+    }
+
+    38% {
+        transform: translateX(-60px);
+    }
+
+    72% {
+        transform: translateX(-150px);
+    }
+
+    81% {
+        transform: translateX(-20px);
+    }
+
+    90% {
+        transform: translateX(40px);
+    }
+
+    95% {
+        transform: translateX(80px);
+    }
+
+    100% {
+        transform: translateX(-20px);
+    }
+}
+
 @keyframes topentrance {
     0% {
         animation-timing-function: ease-in;
@@ -233,49 +260,64 @@ body {
 
 /*========================Fin de lq page d'accueil debut de la description des navbar ============================================*/
 
+
 .nav1 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    position: relative;
-    width: 87%;
-    height: 10%;
-    padding : 4%;
+justify-content: flex-end;
 
-    color: palevioletred;
-    text-shadow: 0px 0px 25px palevioletred;
-    filter: brightness(2);
-    background: black;
-    box-shadow: 7em 0px 0px #101010;
+    width: 92vw;
+    height: 10vh;
+position: relative;
+    color: #ffffff;
+    text-shadow: 0px 0px 25px #b7b7b7;
+    background-color: #575757;
     border-radius: 0px 60px 60px 0px;
+    filter: drop-shadow(0 0 8px #7f05ff) brightness(2);
+    box-shadow: 0px 15px 30px #101010;;
     animation: pulseheart 2s ease 0s 1 normal forwards;
 }
-.nav1::before{
+
+.nav1::after{
     content: '';
-    width: 100%;
+    width: 75%;
     position: absolute;
     height: 100%;
     top: 0%;
-    right: 0%;
+    left: 0%;
     z-index: -1;
-    background-color: #575757;
+    background-color: #1a1a1a;
+    box-shadow: 10px 0px 15px #181818;
+    border-radius: 0px 60px 60px 0px;
+}
+.icone-right-navbar{
+    width: 20%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #1a1a1a ;
+    font-size: 2em;
+
 }
 
 .imagepdp {
     background-image: url("image/pdp.png");
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
+    margin-right: 3%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
-    top: 20%;
     border-radius: 50%;
-    right: -7%;
+ border: #1d1d1d 2px solid;
+
 }
-
-
+.imagepdp:hover .nav1::after{
+    width: 60%;
+}
 
 @keyframes pulseheart {
     0% {
@@ -308,37 +350,41 @@ body {
 .nav2 {
     display: flex;
     flex-direction: column;
-    font-size: 30px;
+    font-size: 2em;
     cursor: pointer;
     font-weight: bold;
- position: absolute;
-    padding-top: 8%;
-top: 0%;
+    position: fixed;
+    padding-top: 6%;
+    top: 0%;
     left: 0%;
-    width: 25%;
+    width: 14%;
     height: 100vh;
-    background-color: #101010;
-    filter: drop-shadow(0 0 15px #4d4d4d) drop-shadow(0 0 50px #4d4d4d) contrast(2) brightness(2);
+    background-color: #1a1a1a;
+    filter: drop-shadow(0 0 15px #401d64) drop-shadow(0 0 50px #401d64) brightness(2);
 
 }
 
 div > #neon {
     position: absolute;
     left: 45%;
+    margin: 1%;
 
 }
 
 .fond {
-    width: 100vw;
-    position: relative;
-    height: 90vh;
+    width: 77vw;
+    padding-top: 14vh;
+    height: 100%;
+    position: absolute;
+    padding-right: 3%;
+    right: 0%;
+    bottom: 0%;
+
 }
 
 .lien {
-    z-index: 1;
     text-decoration: none;
     color: white;
-
     margin-top: 8%;
     margin-bottom: 8%;
     padding-left: 11%;
@@ -346,7 +392,7 @@ div > #neon {
     padding-bottom: 8%;
     width: 97%;
     height: 15%;
-
+    display: block;
     transition: background-color;
 
 }
@@ -357,7 +403,9 @@ div > #neon {
     height: 27%;
     border-radius: 0px 45px 45px 0px;
     position: relative;;
-    z-index: 1;
+    filter: drop-shadow(0 0 8px #7f05ff) brightness(1);
+    box-shadow: 0px 15px 30px #101010;;
+
 
 }
 
@@ -414,14 +462,15 @@ a {
     }
 }
 
-@media only screen and (max-width: 930px) {
+@media only screen and (max-width: 1045px) {
 
 
     .boutonburger {
         display: block;
     }
+
     .lien {
-        z-index: 1;
+
         text-decoration: none;
         color: white;
 

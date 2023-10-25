@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200&family=Rubik:ital,wght@1,300&family=Ubuntu&display=swap');
+
+
+.option{
+    width: 55%;
+    height: 10%;
+    border-bottom: #7531ba 3px solid;
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    margin-bottom: 5%;
+}
+
+
+.navbar-container{
+    width:100% ;
+    height: 348px;
+    border-top: #1d1d1d 2px solid;
+    border-radius: 15px 60px;
+    background: linear-gradient(to bottom, white ,#80808000);
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navbar-space{
+padding: 3% ;
+    width:100% ;
+    height: 136px;
+
+}
+.navbar-description{
+    width:100% ;
+    height: 210px;
+    background-color: #3c3a47;
+    border: #1d1d1d 2px solid;
+    border-radius: 15px 60px;
+    box-shadow:  0px 0px 3em inset grey ;
+}
+.add-navbar-file {
+    font-size: 2.5em;
+    color: white;
+}
+.navbarDesign{
+    width: 100%;
+    height: 92%;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar1{
+    background-color: #401d64;
+    color: white;
+}
+.navbar1 > h2{
+    padding-right: 25px;
+   margin-right: 25px;
+    border-right: white 2px solid ;
+}
+#brillantSearch{
+    border-radius: 15px;
+    padding: 4px;
+}
+.navbar1 > i {
+    font-size: 1.5em;
+    margin: 7px;
+}
+.brillantIconeRight{
+    font-size: 1.5em;
+    position: absolute;
+    right: 9%;
+}
+.navbar1> div > i {
+
+    margin: 7px;
+}
+.navbar2{
+    background-color: #ffa600;
+    font-family:  'Playpen Sans', cursive;;
+    width: 85%;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    color: #803108;
+    font-weight: bolder;
+}
+#solarSearch{
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 4px;
+    border: #803108 2px solid;
+
+}
+#solarSearch::placeholder{
+    color: #803108;
+    font-weight: bold;
+}
+
+.navbar-space>.mercure , .navbar-space>.venus,.navbar-space>.terre{
+    width: 60px;
+    height: 80%;
+    border-radius: 50%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-space>.mercure{
+    background : radial-gradient( #a87038, #ECB57E )  ;
+}
+.navbar-space>.venus{
+    background : radial-gradient( #AC4726 , #DD9134 ) ;
+}
+.navbar-space>.terre{
+    background : radial-gradient( #63D1E2,#2F7081 );
+}
+.planete> .bi{
+    font-size: 1.5em;
+    color: #803108;
+}
