@@ -271,7 +271,7 @@ body {
     height: 8vh;
     position: relative;
     color: #ffffff;
-    text-shadow: 0px 0px 25px #b7b7b7;
+
     background-color: #575757;
     border-radius: 0px 60px 60px 0px;
     filter: drop-shadow(0 0 8px #7f05ff) brightness(2);
@@ -281,7 +281,7 @@ body {
 
 .nav1::after {
     content: '';
-    width: 75%;
+    width: 92%;
     position: absolute;
     height: 100%;
     top: 0%;
@@ -292,13 +292,28 @@ body {
     border-radius: 0px 60px 60px 0px;
 }
 
+.ouvert-nav1::after {
+    width: 75%;
+    transition: width 1s;
+}
+.survol{
+
+    text-shadow: 0px 0px 30px #b7b7b7;
+
+}
+.iconenavbar{
+    display: block;
+
+}
+.icone-right-navbar > div {
+    padding-right: 46px;
+}
 .icone-right-navbar {
-    width: 20%;
-    margin-right: 2%;
+padding-right: 10px;
+    padding-left: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     color: #1a1a1a;
     font-size: 2em;
 
@@ -317,9 +332,6 @@ body {
 
 }
 
-.imagepdp:hover .nav1::after {
-    width: 60%;
-}
 
 @keyframes pulseheart {
     0% {
@@ -371,17 +383,18 @@ div > #neon {
     position: absolute;
     left: 45%;
     margin: 1%;
+    text-shadow: 0px 0px 25px #b7b7b7;
 
 }
 
 .fond {
     width: 77vw;
-    padding-top: 14vh;
+    margin-top: 9%;
     height: 100%;
     position: absolute;
     padding-right: 3%;
     right: 0%;
-    bottom: 0%;
+    top: 0%;
 
 }
 

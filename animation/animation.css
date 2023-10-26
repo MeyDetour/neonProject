@@ -81,7 +81,7 @@ body{
     width: 21px;
     height: 21px;
 }
-/*######################    ANIM 2  #########*/
+/*######################    ANIM SPinnerRGB  ##########################################################*/
 
 @keyframes orbiteHoraire {
     100%{
@@ -129,7 +129,9 @@ border-radius: 50%;
     animation: orbiteAntiHoraire  1s linear infinite;
 }
 
-/*######################    ANIM 3  #########*/
+/*######################    ANIM RESEAUX  ##########################################################*/
+
+
 .reseaux-multimedia {
 background-color: #606060;
 }
@@ -193,3 +195,7 @@ background-color: #606060;
     color: white;
 
 }
+
+
+/*######################    ANIM donuts  ##########################################################*/
+
