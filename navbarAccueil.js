@@ -5,7 +5,7 @@ navbar.innerHTML = `
         <a href='../moduleEtBouton/module.html' class='lien'>Module</a>
         <a href='../moduleEtBouton/bouton.html' class='lien'>Bouton</a>
         <a href='../navbar/navbar.html' class='lien'>Navbar</a>
-        <a href='' class='lien'>Menu</a>
+        <a href='../animation/animation.html' class='lien'>Animation</a>
         <a href='' class='lien'>Menu</a>
         <a href='' class='lien'>Menu</a>
         <a href='' class='lien'>Menu</a>

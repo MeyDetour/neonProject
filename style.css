@@ -265,11 +265,11 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-justify-content: flex-end;
+    justify-content: flex-end;
 
     width: 92vw;
-    height: 10vh;
-position: relative;
+    height: 8vh;
+    position: relative;
     color: #ffffff;
     text-shadow: 0px 0px 25px #b7b7b7;
     background-color: #575757;
@@ -279,7 +279,7 @@ position: relative;
     animation: pulseheart 2s ease 0s 1 normal forwards;
 }
 
-.nav1::after{
+.nav1::after {
     content: '';
     width: 75%;
     position: absolute;
@@ -291,14 +291,15 @@ position: relative;
     box-shadow: 10px 0px 15px #181818;
     border-radius: 0px 60px 60px 0px;
 }
-.icone-right-navbar{
+
+.icone-right-navbar {
     width: 20%;
     margin-right: 2%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    color: #1a1a1a ;
+    color: #1a1a1a;
     font-size: 2em;
 
 }
@@ -312,10 +313,11 @@ position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
- border: #1d1d1d 2px solid;
+    border: #1d1d1d 2px solid;
 
 }
-.imagepdp:hover .nav1::after{
+
+.imagepdp:hover .nav1::after {
     width: 60%;
 }
 
@@ -350,11 +352,12 @@ position: relative;
 .nav2 {
     display: flex;
     flex-direction: column;
-    font-size: 2em;
+    font-size: 1.5em;
     cursor: pointer;
-    font-weight: bold;
+
+    justify-content: center;
     position: fixed;
-    padding-top: 6%;
+
     top: 0%;
     left: 0%;
     width: 14%;
@@ -385,13 +388,12 @@ div > #neon {
 .lien {
     text-decoration: none;
     color: white;
-    margin-top: 8%;
-    margin-bottom: 8%;
-    padding-left: 11%;
-    padding-top: 8%;
-    padding-bottom: 8%;
+    padding-left: 8%;
+
+    padding-top: 6%;
+
     width: 97%;
-    height: 15%;
+    height: 8%;
     display: block;
     transition: background-color;
 
@@ -400,11 +402,11 @@ div > #neon {
 .lien:hover {
     background-color: #444444;
     width: 108%;
-    height: 27%;
+    height: 7%;
     border-radius: 0px 45px 45px 0px;
     position: relative;;
     filter: drop-shadow(0 0 8px #7f05ff) brightness(1);
-    box-shadow: 0px 15px 30px #101010;;
+    box-shadow: 0px 0px 30px #101010;;
 
 
 }
@@ -469,36 +471,51 @@ a {
         display: block;
     }
 
-    .lien {
 
-        text-decoration: none;
-        color: white;
-
-        margin-top: 2%;
-        margin-bottom: 1%;
-        padding-left: 8%;
-        padding-top: 1%;
-        padding-bottom: 1%;
-        width: 50%;
-        height: auto;
-
-        transition: background-color;
-        display: none;
-    }
-
-    .nav2 {
-
-        width: 0%;
-    }
-
-    .lien:hover {
-        color: palevioletred;
-        text-shadow: 0px 0px 25px palevioletred;
-        background-color: transparent;
-        width: 50%;
-        height: auto;
-
-        z-index: 1;
+    .fond {
+        width: 100vw;
+        padding-top: 14vh;
+        height: 100%;
+        position: absolute;
+        padding-right: 3%;
+        padding-left: 3%;
+        right: 0%;
+        bottom: 0%;
 
     }
+
+
+.lien {
+
+    text-decoration: none;
+    color: white;
+
+    margin-top: 2%;
+    margin-bottom: 1%;
+    padding-left: 8%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 50%;
+    height: auto;
+
+    transition: background-color;
+    display: none;
+}
+
+.nav2 {
+
+    width: 0%;
+}
+
+.lien:hover {
+    color: palevioletred;
+    text-shadow: 0px 0px 25px palevioletred;
+    background-color: transparent;
+    width: 50%;
+    height: auto;
+
+    z-index: 1;
+
+}
+
 }

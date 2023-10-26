@@ -122,3 +122,8 @@ padding: 3% ;
     font-size: 1.5em;
     color: #803108;
 }
+
+
+@media only screen and (max-width: 800px) {
+
+}
