@@ -41,6 +41,6 @@ setInterval(() => {
 
 
 function redirect(){
-    window.location.href = 'accueil.html'
+    window.location.href = 'html/accueil.html'
 }
 
