@@ -2,10 +2,10 @@ let navbar = document.querySelector('.navbarMain')
 
 navbar.innerHTML = ` 
     <div class='nav2'>
-        <a href='/home/mey/WebstormProjects/neonProject/moduleEtBouton/module.html' class='lien'>Module</a>
-        <a href='/home/mey/WebstormProjects/neonProject/moduleEtBouton/bouton.html' class='lien'>Bouton</a>
-        <a href='/home/mey/WebstormProjects/neonProject/navbar/navbar.html' class='lien'>Navbar</a>
-        <a href='/home/mey/WebstormProjects/neonProject/animation/animation.html' class='lien'>Animation</a>
+        <a href='neonProject/moduleEtBouton/module.html' class='lien'>Module</a>
+        <a href='neonProject/moduleEtBouton/bouton.html' class='lien'>Bouton</a>
+        <a href='neonProject/navbar/navbar.html' class='lien'>Navbar</a>
+        <a href='neonProject/animation/animation.html' class='lien'>Animation</a>
         <a href='' class='lien'>Menu</a>
         <a href='' class='lien'>Menu</a>
         <a href='' class='lien'>Menu</a>
