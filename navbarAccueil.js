@@ -2,10 +2,10 @@ let navbar = document.querySelector('.navbarMain')
 
 navbar.innerHTML = ` 
     <div class='nav2'>
-        <a href='html/module.html' class='lien'>Module</a>
-        <a href='html/bouton.html' class='lien'>Bouton</a>
-        <a href='html/navbar.html' class='lien'>Navbar</a>
-        <a href='html/animation.html' class='lien'>Animation</a>
+        <a href='module.html' class='lien'>Module</a>
+        <a href='bouton.html' class='lien'>Bouton</a>
+        <a href='navbar.html' class='lien'>Navbar</a>
+        <a href='animation.html' class='lien'>Animation</a>
         <a href='' class='lien'>Menu</a>
         <a href='' class='lien'>Menu</a>
         <a href='' class='lien'>Menu</a>
