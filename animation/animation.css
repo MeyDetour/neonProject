@@ -30,6 +30,9 @@ body{
     background-color: #ffce0b;
     border-radius: 50%;
     height: 220px;
+    position: absolute;
+    top: 30%;
+    left: 37%;
     width: 220px;
     box-shadow: 0px 0px 3em lightgrey;
 }
@@ -44,8 +47,8 @@ body{
 .earth {
     width: 330px;
     height: 330px;
-    top: 13.5em;
-    left: 17.5em;
+    top: -25.5%;
+    left: -23.5%;
     animation: orbiteHoraire 36s linear infinite;
 }
 
@@ -53,8 +56,8 @@ body{
     background-color: #1a26af;
     width: 58px;
     height: 58px;
-    top: 8em;
-    left: 18em;
+    top: 47%;
+    left: 89%;
 }
 
 .earth::before, .moon::before {
@@ -64,8 +67,8 @@ body{
 }
 
 .moon {
-    top: 7em;
-    left: 17em;
+    top: 42%;
+    left: 84%;
     height: 90px;
     width: 90px;
     animation: orbiteHoraire 3s linear infinite;
@@ -73,8 +76,8 @@ body{
 
 .moon::before {
     background-color: lightgrey;
-    top: 2em;
-    left: 5em;
+    top: 35%;
+    left: 85%;
     width: 21px;
     height: 21px;
 }
@@ -128,7 +131,7 @@ border-radius: 50%;
 
 /*######################    ANIM 3  #########*/
 .reseaux-multimedia {
-background-color: white;
+background-color: #606060;
 }
 .reseaux{
     width: 100px;
