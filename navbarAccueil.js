@@ -22,11 +22,11 @@ navbar.innerHTML = `
          <a href="accueil.html" id="neon">Neon</a>
            <div class="icone-right-navbar-container-nav1">
                 <div class="icone-right-navbar1">
-                <div onclick="dire()"><i class="iconenavbar bi bi-plus-square-fill"></i></div>
-                <div onclick="dire()"><i class="iconenavbar bi bi-bricks repository"></i></div>
-                <div onclick="dire()"><i class="iconenavbar bi bi-people liste-ami"></i></div>
-                 <div onclick="dire()"><i class="iconenavbar bi bi-gear settings"></i></div>
-                <div onclick="dire()" class="imagepdp"></div>
+                <div onclick="create_files()"><i class="iconenavbar bi bi-plus-square-fill"></i></div>
+                <div onclick="project()"><i class="iconenavbar bi bi-bricks repository"></i></div>
+                <div onclick="friends()"><i class="iconenavbar bi bi-people liste-ami"></i></div>
+                 <div onclick="settings()"><i class="iconenavbar bi bi-gear settings"></i></div>
+                <div  class="imagepdp"></div>
                 </div>
            </div>
         
@@ -41,6 +41,20 @@ navbar.innerHTML = `
         </ul>
       </div>
 `;
+function create_files(){
+
+}
+function project(){
+
+}
+function friends(){
+
+}
+function settings(){
+
+}
+
+
 
 
 let burger = document.querySelector('.boutonburger')
