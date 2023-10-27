@@ -332,10 +332,11 @@ body {
 }
 
 .imagepdp {
-    background-image: url("image/pdp.png");
-    width: 55px;
-    height: 55px;
-    margin-right: 3%;
+    background-image: url("image/pd2.png");
+
+    filter: none;
+
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -343,7 +344,11 @@ body {
     border: #1d1d1d 2px solid;
 
 }
-
+.imagepdpNavbar,.imagepdpDropdown{
+    width: 55px;
+    height: 55px;
+    margin-right: 3%;
+}
 @keyframes pulseheart {
     0% {
         animation-timing-function: ease-out;
@@ -639,6 +644,7 @@ a {
 
     .lien {
         text-decoration: none;
+        text-wrap: normal;
         color: white;
         margin-top: 2%;
         margin-bottom: 1%;

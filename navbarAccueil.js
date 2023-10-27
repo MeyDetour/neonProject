@@ -11,7 +11,7 @@ navbar.innerHTML = `
             <a href='navbar.html' class='lien'>Navbar</a>
             <a href='animation.html' class='lien'>Animation</a>
             <a href='loginform.html' class='lien'>LoginForm</a>
-            <a href='' class='lien'>Menu</a>
+            <a href='palettecouleur.html' class='lien'>ColorPalette</a>
             <a href='' class='lien'>Menu</a>
             <a href='' class='lien'>Menu</a>
         </div>
@@ -26,7 +26,7 @@ navbar.innerHTML = `
                 <div onclick="project()"><i class="iconenavbar bi bi-bricks repository"></i></div>
                 <div onclick="friends()"><i class="iconenavbar bi bi-people liste-ami"></i></div>
                  <div onclick="settings()"><i class="iconenavbar bi bi-gear settings"></i></div>
-                <div  class="imagepdp"></div>
+                <div  class="imagepdp imagepdpNavbar "></div>
                 </div>
            </div>
         
@@ -51,6 +51,7 @@ function friends(){
 
 }
 function settings(){
+    window.location.href='settings.html'
 
 }
 

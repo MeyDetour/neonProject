@@ -33,9 +33,7 @@ function neonbar_out(nb) {
 
 
 setInterval(() => {
-    console.log('deb')
     neonbar_entrance(1)
-    console.log('fin')
 }, 3500)
 
 
