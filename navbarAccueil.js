@@ -2,63 +2,120 @@ let navbar = document.querySelector('.navbarMain')
 
 
 navbar.innerHTML = ` 
-    <div class='nav2'>
-        <a href='module.html' class='lien'>Module</a>
-        <a href='bouton.html' class='lien'>Bouton</a>
-        <a href='navbar.html' class='lien'>Navbar</a>
-        <a href='animation.html' class='lien'>Animation</a>
-        <a href='loginform.html' class='lien'>Login Form</a>
-        <a href='' class='lien'>Menu</a>
-        <a href='' class='lien'>Menu</a>
-        <a href='' class='lien'>Menu</a>
+ 
+ 
+    <div class='nav2 out'>
+        <div class="nav2link">
+            <a href='module.html' class='lien'>Module</a>
+            <a href='bouton.html' class='lien'>Bouton</a>
+            <a href='navbar.html' class='lien'>Navbar</a>
+            <a href='animation.html' class='lien'>Animation</a>
+            <a href='loginform.html' class='lien'>LoginForm</a>
+            <a href='' class='lien'>Menu</a>
+            <a href='' class='lien'>Menu</a>
+            <a href='' class='lien'>Menu</a>
+        </div>
+  
     </div>
     <div class='nav1'>
         <i class='bi bi-list boutonburger'></i>
-         <h1 id='neon'>Neon</h1>
-         <div class="icone-right-navbar-container">
-            <div class="icone-right-navbar">
+         <a href="accueil.html" id="neon">Neon</a>
+           <div class="icone-right-navbar-container-nav1">
+                <div class="icone-right-navbar1">
                 <div onclick="dire()"><i class="iconenavbar bi bi-plus-square-fill"></i></div>
                 <div onclick="dire()"><i class="iconenavbar bi bi-bricks repository"></i></div>
                 <div onclick="dire()"><i class="iconenavbar bi bi-people liste-ami"></i></div>
+                 <div onclick="dire()"><i class="iconenavbar bi bi-gear settings"></i></div>
                 <div onclick="dire()" class="imagepdp"></div>
-            </div>
+                </div>
+           </div>
+        
     </div>
-    </div>
+ <div onclick="dire()" class="imagepdp imagepdpDropdown"></div>
+      <div class="dropdownmenu">
+        <ul>
+          <li class="eltDropdown"><a href=""><i class="iconeDropdown bi bi-plus-square-fill"></i></a></li>
+          <li class="eltDropdown"><a href=""><i class="iconeDropdown bi bi-bricks repository"></i></a></li>
+          <li class="eltDropdown"><a href=""><i class="iconeDropdown bi bi-people liste-ami"></i></a></li>
+          <li class="eltDropdown"><a href=""><i class="iconeDropdown bi bi-gear"></i></a></li>
+        </ul>
+      </div>
 `;
 
 
-function redirect() {
-    window.location.href = 'accueil.html'
+let burger = document.querySelector('.boutonburger')
+let nav2 = document.querySelector('.nav2')
+const fond = document.querySelector('.fond')
+let imagedropdown = document.querySelector('.imagepdpDropdown')
+let dropmenu = document.querySelector('.dropdownmenu')
+
+function fermer_nav2() {
+    if (nav2.classList.contains('in')) {
+        nav2.classList.toggle('in')
+        nav2.classList.toggle('out')
+    }
 }
 
-function dire() {
-    console.log('click')
+function fermer_dropdown() {
+    if (dropmenu.classList.contains('display-block')) {
+        dropmenu.classList.remove('display-block')
+    }
 }
 
-let imagepdp = document.querySelector('.imagepdp')
-let nav1 = document.querySelector('.nav1')
-let iconesNavbar = document.querySelectorAll('.iconenavbar')
-let iconeRightNavbarcontainer = document.querySelector('.icone-right-navbar-container')
+fond.addEventListener('click', fermer_dropdown)
 
 
-iconeRightNavbarcontainer.addEventListener('mouseover', () => {
-    console.log('over')
-    nav1.classList.add('ouvert-nav1');
-    iconesNavbar.forEach((icone) => {
-        icone.style.display = 'block'
-        icone.addEventListener('mouseover',()=>{
-            icone.classList.add('survol')
-        })
-
-    })
-
+imagedropdown.addEventListener('click', () => {
+    fermer_nav2()
+    dropmenu.classList.toggle('display-block')
 
 })
 
-iconeRightNavbarcontainer.addEventListener('mouseout', () => {
-    console.log('out')
-    nav1.classList.remove('ouvert-nav1');
-    iconesNavbar.forEach((icone) => {
-        icone.classList.remove('survol')
+window.addEventListener('resize', () => {
+    fermer_nav2()
+})
+burger.addEventListener('click', () => {
+    fermer_dropdown()
+    console.log('reouvrir')
+    nav2.classList.toggle('in')
+    nav2.classList.toggle('out')
+
+    if (nav2.classList.contains('in')) {
+        fond.style.display = 'none'
+    }
+    else{
+        fond.style.display = 'block'
+
+}}
+)
+
+
+    function dire() {
+        console.log('click')
+    }
+
+    let imagepdp = document.querySelector('.imagepdp')
+    let nav1 = document.querySelector('.nav1')
+    let iconesNavbar = document.querySelectorAll('.iconenavbar')
+    let iconeRightNavbarcontainer = document.querySelector('.icone-right-navbar-container-nav1')
+
+
+    iconeRightNavbarcontainer.addEventListener('mouseover', () => {
+        console.log('over')
+        nav1.classList.add('ouvert-nav1');
+        iconesNavbar.forEach((icone) => {
+            icone.style.display = 'block'
+            icone.addEventListener('mouseover', () => {
+                icone.classList.add('survol')
+            })
+
+        })
     })
-});
+
+    iconeRightNavbarcontainer.addEventListener('mouseout', () => {
+        console.log('out')
+        nav1.classList.remove('ouvert-nav1');
+        iconesNavbar.forEach((icone) => {
+            icone.classList.remove('survol')
+        })
+    });
