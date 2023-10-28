@@ -5,47 +5,173 @@
     justify-content: space-between;
     align-items: center;
 }
-
+.backBar {
+    color: black;
+    font-size: 2em;
+}
 .settingsimagepdp{
     width: 80px;
     height: 80px;
 }
-.settings-pseudo{
-    color: black;
-    margin-right: 20px;
 
-}
-.backBar , i{
-    color: black;
-    font-size: 2em;
-}
-
-.settings-pagemainContainer{
-
-}
+/*############## Fin backbar #################*/
 .settings-option-bar{
     display: flex;
     justify-content: space-around;
     border-bottom: #282828 3px solid;
 }
-
 .settings-option{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 300;
 
 }
-.setting-container-menu{
 
-    height: 500px ;
+.settings-option>i{
+    color: black;
+    font-size: 2em;
+    margin-right: 5px;
+}
+
+.setting-container-menu{
+    height: 200vh ;
     width: 100%;
     background-color: #0d6dbb;
     position: relative;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/*############## settings general  #################*/
+.titleBigSettings{
+    width: 35%;
+    font-size: 3em;
+    border-bottom: black 3px solid ;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+.titleSMSettings{
+    width: 24%;
+    font-size: 2em;
+    color: #0d0d0d;
+    border-bottom: #0d0d0d 3px solid ;
+    margin-bottom: 30px;
+    margin-top: 60px;
 
 
 }
-.settings-contenu{
+.settingsOptionPage{
+    margin-bottom: 20%;
+}
+
+/*############## OPTION PROFIL #################*/
+.imagepdp-Settingsprofil{
+    width: 200px;
+    height: 200px;
+}
+.profil-modifier-nom{
+    display: flex;
+    flex-direction: column;
+
+}
+#Porfilbio{
+    width: 70%;
+    height: 300px;
+}
+.opt-profil-icone-choisi{
+    width: 20%;
+    height: 300px;
+    background-color: black;
+}
+
+.reseaux{
+    width: 140px;
+    height: 94px;
+    border-radius: 30px;
+    font-size: 1.6em;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: start;
+}
+.reseaux-fb{
+    border: #1168FC 2px solid;
+    color: #1168FC;
+}
+.reseaux-fb:hover{
+    background-color:  #1168FC ;
+    color: white;
+}
+.reseaux-whatsapp{
+    border: #85EB6C 2px solid;
+    color: #85EB6C;
+}
+.reseaux-whatsapp:hover{
+    background-color:  #85EB6C ;
+    color: white;
+}
+.reseaux-twitter{
+    border: #2F9EF1 2px solid;
+    color: #2F9EF1;
+}
+.reseaux-twitter:hover{
+    background-color:  #2F9EF1 ;
+    color: white;
+}
+.reseaux-x{
+    border: #080808 2px solid;
+    color: #080808;
+}
+.reseaux-x:hover{
+    background-color:  #080808 ;
+    color: white;
+}
+
+.reseaux-insta-bordure{
+    background: radial-gradient(100% 100% at 0% 100% , #FAC734 20%, #E8453A , #E46CD7 , #8B6FFD 120%);
+    border: 0;
+}
+.reseaux-insta{
     height: 100%;
     width: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
+    background: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E46CD7;
+    font-size: 1.8em;
+}
+.reseaux-insta-bordure:hover .reseaux-insta{
+    background: transparent;
+    color: white;
 
+}
+.profil-badge{
+
+    width: 100%;
+    background-color: #401d64;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+}
+.profil-bage-img-et-span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.imagebadge{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 20px;
 }
