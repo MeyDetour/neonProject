@@ -39,6 +39,10 @@
     color: white;
     margin-right: 15px;
 }
+
+.scroll-code-login>p{
+    padding-bottom: 200px;
+}
 .active{
 
     border: white 3px solid;
@@ -50,7 +54,7 @@
  }
 .scroll-code-login{
     padding-top: 20px ;
-    overflow-y: scroll;
+    overflow-y: hidden;
     height: 80%;
     color: white;
     padding-left: 5px;
