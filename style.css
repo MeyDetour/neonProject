@@ -8,7 +8,75 @@ body {
     background-color: #444654;
     overflow-x: hidden;
 }
+/*===================NEON STYLE=============*/
+/* Styles de base pour le bouton de commutation */
+.naoNeon-switch {
+    position: relative;
+    display: inline-block;
+    width: 80px; /* Largeur réduite */
+    height: 40px; /* Hauteur réduite */
+}
 
+.naoNeon-switch input {
+    display: none;
+}
+
+/* Style du fond vert */
+.naoNeon-switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:  #141717;
+    box-shadow: 0px 0px 1em grey;
+    filter: drop-shadow(0px 0px 1em green) brightness(1.5);
+
+    transition: 0.4s;
+    border-radius: 20px; /* Rayon réduit */
+}
+
+/* Style du rond vert avec ombre, plus petit */
+.naoNeon-switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px; /* Hauteur réduite */
+    width: 20px; /* Largeur réduite */
+    left: 3px; /* Position ajustée */
+    bottom: 10px; /* Position ajustée */
+    background-color: green;
+    border: #141717 1px solid;
+    box-shadow: 0px 0px 1em grey;
+    filter: drop-shadow(0px 0px 1em green) brightness(1.5);
+
+    transition: 0.4s;
+    border-radius: 50%;
+
+}
+
+/* Lorsque le bouton est coché, effectuer l'animation */
+.naoNeon-switch input:checked + .slider {
+    background-color: #141717;
+    box-shadow: 0px 0px 1em grey;
+    filter: drop-shadow(0px 0px 1em red) brightness(1.5);
+
+}
+
+/* Style du rond rouge plus petit */
+.naoNeon-switch input:checked + .slider:before {
+    height: 20px; /* Hauteur réduite */
+    width: 20px; /* Largeur réduite */
+    left: 55px; /* Position ajustée */
+    background-color: #b80303;
+    border: #141717 1px solid;
+    box-shadow: 0px 0px 1em grey;
+    filter: drop-shadow(0px 0px 1em red) brightness(1.5);
+}
+
+
+
+/*===================FIN NEON STYLE=============*/
 .AccueilPage {
     overflow-y: hidden;
 

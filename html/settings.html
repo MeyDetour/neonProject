@@ -31,19 +31,20 @@
             <div class="settings-option-bar ">
                 <a href='#settings-profil' class="settings-option"><i
                         class="bi bi-person-bounding-box"></i><span>Profil</span></a>
-                <a href='#settings-' class="settings-option"><i
+                <a href='#settings-notif' class="settings-option"><i
                         class="bi bi-app-indicator"></i><span>Notification</span></a>
 
-                <a href='#settings-' class="settings-option"><i class="bi bi-incognito"></i><span>Confidentialité</span></a>
-                <a href='#settings-' class="settings-option"><i class="bi bi-folder-fill"></i><span>Project</span></a>
+                <a href='#settings-confidentialite' class="settings-option"><i class="bi bi-incognito"></i><span>Confidentialité</span></a>
+                <a href='#settings-project' class="settings-option"><i
+                        class="bi bi-folder-fill"></i><span>Project</span></a>
 
-                <a href='#settings-' class="settings-option"><i class="bi bi-body-text"></i></i>
+                <a href='#settings-statistique' class="settings-option"><i class="bi bi-body-text"></i></i>
                     <span>Statistiques</span></a>
-                <a href='#settings-' class="settings-option"><i class="bi bi-palette-fill"></i></i>
+                <a href='#settings-apparence' class="settings-option"><i class="bi bi-palette-fill"></i></i>
                     <span>Apparence</span></a>
-                <a href='#settings-' class="settings-option"><i class="bi bi-person-fill-lock"></i><span>Password and Security</span></a>
+                <a href='#settings-mdp' class="settings-option"><i class="bi bi-person-fill-lock"></i><span>Password and Security</span></a>
 
-                <a href='#settings-' class="settings-option"><i
+                <a href='#settings-faq' class="settings-option"><i
                         class="bi bi-question-octagon-fill"></i><span>Request</span></a>
             </div>
         </nav>
@@ -51,7 +52,9 @@
             <div class="settingsOptionPage">
                 <div id="#settings-profil" class="titleBigSettings"><span>Profil</span></div>
                 <p>
-                    Profil, votre espace pour briller ! Choisissez comment vous souhaitez vous présenter : image, icône, pseudo, tout est possible ! Soyez créatif, mais n'oubliez pas de rester respectueux. ✨ Gardez-le approprié !
+                    Profil, votre espace pour briller ! Choisissez comment vous souhaitez vous présenter : image, icône,
+                    pseudo, tout est possible ! Soyez créatif, mais n'oubliez pas de rester respectueux. ✨ Gardez-le
+                    approprié !
 
                 </p>
                 <div class="d-flex flex-row align-items-center">
@@ -102,32 +105,138 @@
                 <button>Update profil</button>
             </div>
             <div class="settingsOptionPage">
-                <div id="#settings-profil" class="titleBigSettings"><span>Notification</span></div>
-<p>Notifications, à vous de décider ! Restez informé et actif, ou préférez rester en retrait. Votre choix, votre rythme. 📣🤫💤
-</p>
+                <div id="#settings-notif" class="titleBigSettings"><span>Notification</span></div>
+                <p>Notifications, à vous de décider ! Restez informé et actif, ou préférez rester en retrait. Votre
+                    choix, votre rythme. 📣🤫💤
+                </p>
+                <div class="d-flex flex-row justify-content-center"><i class="opt-allnotif-ic-true bi bi-bell-fill"></i><i
+                        class=" opt-allnotif-ic-false bi bi-bell-slash-fill"></i> Active all notifications
+                </div>
+                <div class="opt-notif-type-container d-flex flex-row justify-content-between">
+                    <div class="opt-notif-type-select">
+                        <div class="opt-notif-type"></div>
+                        <div class="opt-notif-type"></div>
+                        <div class="opt-notif-type"></div>
+                    </div>
+                    <div class="opt-notif-animaiton-type"></div>
+                </div>
+                <div class="opt-notif-toggleSwitch">
+                    <div class="d-flex flex-row">
+                        <span>NOtif Maj Mail</span>
+                        <label class="naoNeon-switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <span>Notif AMi</span>
+                        <label class="naoNeon-switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="checkbox1" checked>
+                            <label for="checkbox1">Notifications pour les mises à jour de projets de mes amis</label>
+                        </div>
+                        <div class="checkbox-label">
+                            <input type="checkbox" id="checkbox2">
+                            <label for="checkbox2">Être averti lorsque quelqu'un devient votre ami</label>
+                        </div>
+                    </div>
 
-                <div class="titleSMSettings"><span>Badges</span></div>
+                </div>
+
+                <div class="titleSMSettings"><span>Les Coulisses de l'Influence</span></div>
+                <div class="d-flex flex-row centered">
 
 
+                    <div class="activity-options d-flex flex-column align-items-center">
+                        <label for="likes">J'aime ton contenu <br> Notifications de likes</label>
+                        <input type="checkbox" id="likes" class="custom-checkbox">
 
-            </div>
-            <div class="settingsOptionPage">
-                <div id="#settings-profil" class="titleBigSettings"><span>Profil</span></div>
-                <div class="titleSMSettings"><span>Badges</span></div>
+                    </div>
+                    <div class="activity-options d-flex flex-column align-items-center">
+                        <label for="reposts">Partageurs fidèles <br> Notifications de reposts</label>
+                        <input type="checkbox" id="reposts" class="custom-checkbox">
 
-
-
-            </div>
-            <div class="settingsOptionPage">
-                <div id="#settings-profil" class="titleBigSettings"><span>Profil</span></div>
-                <div class="titleSMSettings"><span>Badges</span></div>
-
-
-
-            </div>
+                    </div>
+                </div>
 
         </div>
+        <div class="settingsOptionPage">
+            <div id="#settings-confidentialite" class="titleBigSettings"><span>Profil</span></div>
+            <h5>Autoriser l'affichage de :</h5>
+            <div class="d-flex flex-row flex-wrap">
+                <div class="opt-confidentialite-informationTag">
+                    <span>Nom du compte</span>
+                    <span>Lorem ipsum.</span>
+                </div>
+                <div class="opt-confidentialite-informationTag">
+                    <span>Nom du compte</span>
+                    <span>Lorem ipsum.</span>
+                </div>
+                <div class="opt-confidentialite-informationTag">
+                    <span>Nom du compte</span>
+                    <span>Lorem ipsum.</span>
+                </div>
+                <div class="opt-confidentialite-informationTag">
+                    <span>Nom du compte</span>
+                    <span>Lorem ipsum.</span>
+                </div>
+                <div class="opt-confidentialite-informationTag">
+                    <span>Nom du compte</span>
+                    <span>Lorem ipsum.</span>
+                </div>
+                <div class="opt-confidentialite-informationTag">
+                    <span>Nom du compte</span>
+                    <span>Lorem ipsum.</span>
+                </div>
+                <div class="opt-confidentialite-informationTag">
+                    <span>Nom du compte</span>
+                    <span>Lorem ipsum.</span>
+                </div>
+
+
+            </div>
+            <div class="titleSMSettings"><span>Badges</span></div>
+
+
+        </div>
+        <div class="settingsOptionPage">
+            <div id="#settings-projecct" class="titleBigSettings"><span>Profil</span></div>
+            <div class="titleSMSettings"><span>Badges</span></div>
+
+
+        </div>
+        <div class="settingsOptionPage">
+            <div id="#settings-confidentialite" class="titleBigSettings"><span>Profil</span></div>
+            <div class="titleSMSettings"><span>Badges</span></div>
+
+
+        </div>
+        <div class="settingsOptionPage">
+            <div id="#settings-projecct" class="titleBigSettings"><span>Profil</span></div>
+            <div class="titleSMSettings"><span>Badges</span></div>
+
+
+        </div>
+        <div class="settingsOptionPage">
+            <div id="#settings-confidentialite" class="titleBigSettings"><span>Profil</span></div>
+            <div class="titleSMSettings"><span>Badges</span></div>
+
+
+        </div>
+        <div class="settingsOptionPage">
+            <div id="#settings-projecct" class="titleBigSettings"><span>Profil</span></div>
+            <div class="titleSMSettings"><span>Badges</span></div>
+
+
+        </div>
+
     </div>
+</div>
 </div>
 
 
