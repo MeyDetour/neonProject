@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+}
+
 .backBar{
 
     display: flex;
@@ -6,7 +10,7 @@
     align-items: center;
 }
 .backBar {
-    color: black;
+    color: #1a1a1a;
     font-size: 2em;
 }
 .settingsimagepdp{
@@ -22,7 +26,7 @@
 }
 .settings-option{
     text-decoration: none;
-    color: black;
+    color: #1a1a1a;
     margin-right: 20px;
     display: flex;
     flex-direction: row;
@@ -32,15 +36,15 @@
 }
 
 .settings-option>i{
-    color: black;
+    color: #1a1a1a;
     font-size: 2em;
     margin-right: 5px;
 }
 
 .setting-container-menu{
-    height: 1000vh ;
+height: 1150px;
     width: 100%;
-    background-color: #0d6dbb;
+    background-color: #687d80;
     position: relative;
     overflow-y: hidden;
     display: flex;
@@ -54,7 +58,7 @@
     font-size: 3em;
     border-bottom: black 3px solid ;
     margin-bottom: 60px;
-    margin-top: 60px;
+
 }
 .titleSMSettings{
     width: 24%;
@@ -254,3 +258,119 @@
 
 
 
+/*############## OPTION PROJET #################*/
+.opt-projet-listeProj{
+    border: black 3px solid ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.opt-projet-auteur,opt-projet-collab{
+    border: black 3px solid;
+}
+.opt-projet-listeProj-right{
+    text-align: right ;
+}
+
+
+/*############## OPTION STAT #################*/
+.opt-stat-container-stat{
+    height: 400px;
+    width: 100%;
+}
+.opt-stat-left-square-container{
+    height: 100%;
+    width: 20%;
+
+}
+.opt-stat-left-square{
+    width: 100%;
+    height: 50%;
+    border: black 3px solid;
+
+}
+.opt-stat-middle-container{
+    width: 50%;
+    height: 100%;
+    border: black 3px solid;
+}
+.opt-stat-right{
+    width: 20%;
+    height: 100%;
+    border: black 3px solid;
+}
+.opt-stat-graph-container{
+    width: 100%;
+    height: 500px;
+}
+.opt-stat-graph{
+    width: 80%;
+    height: 100%;
+    border: black 2px solid;
+
+}
+
+
+/*############## OPTION STAT #################*/
+.opt-apparence-DLtheme{
+    width: 100%;
+    height: 300px;
+
+}
+
+.opt-apparence-d,.opt-apparence-l{
+    width: 45%;
+    height: 100%;
+    border: black solid 2px;
+
+}
+.opt-apparence-d-titre,.opt-apparence-l-titre{
+    width: 100%;
+    height: 10%;
+    border: #401d64 3px solid;
+}
+
+.opt-apparence-d{}
+
+.opt-apparence-l{}
+
+
+.opt-apparence-apercu-container{
+    width: 100%;
+    height: 400px;
+}
+.opt-apparence-apercu{
+width: 30%;
+    height: 100%;
+    border: black 2px solid;
+}
+.opt-apparence-parametre-apercu{
+    width: 30%;
+    height: 100%;
+    border: black 2px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.opt-apparence-save{
+    width: 100%;
+    height: 100px;
+}
+/*############## OPTION MDP #################*/
+.opt-mdp-changerMDP{
+    background-color: #401d64;
+    border-radius: 0 60px 60px 0;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+.square {
+    width: 50%; /* Largeur du carré */
+    height: 100%; /* Hauteur du carré */
+    background: linear-gradient(to right, transparent 0%, black 25%); /* Opacité 0 à gauche, 100% à droite */
+    border-radius: 0 50px 50px 0; /* Coins droits arrondis */
+}
+.square>p{
+    color: white;
+}

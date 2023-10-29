@@ -28,29 +28,51 @@
 
     <div class="container settings-page-mainContainer p-5">
         <nav id="settings-option-nav">
-            <div class="settings-option-bar ">
-                <a href='#settings-profil' class="settings-option"><i
-                        class="bi bi-person-bounding-box"></i><span>Profil</span></a>
-                <a href='#settings-notif' class="settings-option"><i
-                        class="bi bi-app-indicator"></i><span>Notification</span></a>
 
-                <a href='#settings-confidentialite' class="settings-option"><i class="bi bi-incognito"></i><span>Confidentialité</span></a>
-                <a href='#settings-project' class="settings-option"><i
-                        class="bi bi-folder-fill"></i><span>Project</span></a>
+            <ul class="nav nav-pills settings-option-bar">
+                <li class="nav-item">
+                    <a href='#settings-profil' class="settings-option"><i
+                            class="bi bi-person-bounding-box"></i>Profil</a>
+                </li>
+                <li class="nav-item">
+                    <a href='#settings-notif' class="settings-option"><i
+                            class="bi bi-app-indicator"></i>Notification</a>
+                </li>
+                <li class="nav-item">
+                    <a href='#settings-confidentialite' class="settings-option"><i class="bi bi-incognito"></i>Confidentialité</a>
 
-                <a href='#settings-statistique' class="settings-option"><i class="bi bi-body-text"></i></i>
-                    <span>Statistiques</span></a>
-                <a href='#settings-apparence' class="settings-option"><i class="bi bi-palette-fill"></i></i>
-                    <span>Apparence</span></a>
-                <a href='#settings-mdp' class="settings-option"><i class="bi bi-person-fill-lock"></i><span>Password and Security</span></a>
+                </li>
+                <li class="nav-item">
+                    <a href='#settings-project' class="settings-option"><i
+                            class="bi bi-folder-fill"></i>Project</a>
+                </li>
+                <li class="nav-item">
+                    <a href='#settings-statistique' class="settings-option"><i class="bi bi-body-text"></i></i>
+                        Statistiques</a>
+                </li>
+                <li class="nav-item">
+                    <a href='#settings-apparence' class="settings-option"><i class="bi bi-palette-fill"></i></i>
+                        Apparence</a>
 
-                <a href='#settings-faq' class="settings-option"><i
-                        class="bi bi-question-octagon-fill"></i><span>Request</span></a>
-            </div>
+                </li>
+                <li class="nav-item">
+                    <a href='#settings-mdp' class="settings-option"><i class="bi bi-person-fill-lock"></i>Password and
+                        Security</a>
+                </li>
+                <li class="nav-item">
+                    <a href='#settings-faq' class="settings-option"><i
+                            class="bi bi-question-octagon-fill"></i>Request</a>
+
+                </li>
+            </ul>
+
         </nav>
-        <div class='setting-container-menu mt-5'>
-            <div class="settingsOptionPage">
-                <div id="#settings-profil" class="titleBigSettings"><span>Profil</span></div>
+
+        <div class="scroll-code-login setting-container-menu mt-5" data-bs-spy="scroll"
+             data-bs-target="#settings-option-nav" data-bs-offset="0" tabindex="0">
+
+            <div class="settingsOptionPage" id="settings-profil">
+                <div class="titleBigSettings"><span>Profil</span></div>
                 <p>
                     Profil, votre espace pour briller ! Choisissez comment vous souhaitez vous présenter : image, icône,
                     pseudo, tout est possible ! Soyez créatif, mais n'oubliez pas de rester respectueux. ✨ Gardez-le
@@ -104,8 +126,8 @@
                 </div>
                 <button>Update profil</button>
             </div>
-            <div class="settingsOptionPage">
-                <div id="#settings-notif" class="titleBigSettings"><span>Notification</span></div>
+            <div class="settingsOptionPage" id="settings-notif">
+                <div class="titleBigSettings"><span>Notification</span></div>
                 <p>Notifications, à vous de décider ! Restez informé et actif, ou préférez rester en retrait. Votre
                     choix, votre rythme. 📣🤫💤
                 </p>
@@ -164,79 +186,239 @@
                     </div>
                 </div>
 
-        </div>
-        <div class="settingsOptionPage">
-            <div id="#settings-confidentialite" class="titleBigSettings"><span>Profil</span></div>
-            <h5>Autoriser l'affichage de :</h5>
-            <div class="d-flex flex-row flex-wrap">
-                <div class="opt-confidentialite-informationTag">
-                    <span>Nom du compte</span>
-                    <span>Lorem ipsum.</span>
-                </div>
-                <div class="opt-confidentialite-informationTag">
-                    <span>Nom du compte</span>
-                    <span>Lorem ipsum.</span>
-                </div>
-                <div class="opt-confidentialite-informationTag">
-                    <span>Nom du compte</span>
-                    <span>Lorem ipsum.</span>
-                </div>
-                <div class="opt-confidentialite-informationTag">
-                    <span>Nom du compte</span>
-                    <span>Lorem ipsum.</span>
-                </div>
-                <div class="opt-confidentialite-informationTag">
-                    <span>Nom du compte</span>
-                    <span>Lorem ipsum.</span>
-                </div>
-                <div class="opt-confidentialite-informationTag">
-                    <span>Nom du compte</span>
-                    <span>Lorem ipsum.</span>
-                </div>
-                <div class="opt-confidentialite-informationTag">
-                    <span>Nom du compte</span>
-                    <span>Lorem ipsum.</span>
-                </div>
+            </div>
+            <div class="settingsOptionPage" id="settings-confidentialite">
+                <div class="titleBigSettings"><span>Confidentiel</span></div>
+                <p>Confidentialité, c'est comme votre placard magique. Choisissez ce que vous voulez montrer au public.
+                    Nous n'imposons pas, c'est votre spectacle ! 🪄🎩✨
+                </p>
+                <h5>Autoriser l'affichage de :</h5>
+                <div class="d-flex flex-row flex-wrap">
+                    <div class="opt-confidentialite-informationTag">
+                        <span>Nom du compte</span>
+                        <span>Lorem ipsum.</span>
+                    </div>
+                    <div class="opt-confidentialite-informationTag">
+                        <span>Nom du compte</span>
+                        <span>Lorem ipsum.</span>
+                    </div>
+                    <div class="opt-confidentialite-informationTag">
+                        <span>Nom du compte</span>
+                        <span>Lorem ipsum.</span>
+                    </div>
+                    <div class="opt-confidentialite-informationTag">
+                        <span>Nom du compte</span>
+                        <span>Lorem ipsum.</span>
+                    </div>
+                    <div class="opt-confidentialite-informationTag">
+                        <span>Nom du compte</span>
+                        <span>Lorem ipsum.</span>
+                    </div>
+                    <div class="opt-confidentialite-informationTag">
+                        <span>Nom du compte</span>
+                        <span>Lorem ipsum.</span>
+                    </div>
+                    <div class="opt-confidentialite-informationTag">
+                        <span>Nom du compte</span>
+                        <span>Lorem ipsum.</span>
+                    </div>
 
+
+                </div>
 
             </div>
-            <div class="titleSMSettings"><span>Badges</span></div>
+            <div class="settingsOptionPage" id="settings-project">
+                <div class="titleBigSettings"><span>Project</span></div>
+                <div>
+                    <label class="naoNeon-switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <p>Préférez le partage public ! Notre communauté s'épanouit grâce à l'ouverture. Partagez vos
+                        projets pour plus d'inspiration et d'entraide. Ensemble, nous grandissons.
+                    </p>
+                </div>
+                <div class="d-flex flex-column">
+                    <div class="opt-projet-listeProj">
+                        <div class="opt-projet-listeProj-left">
+                            <div>
+                                <a href="">Nom du projet </a> <span>3<i class="bi bi-people-fill"></i></span></div>
+                            <div>
+                                <span class="opt-projet-auteur"> OWNER</span>
+                                <span class="opt-projet-collab">collab 1</span>
+                                <span class="opt-projet-collab">collab 2</span>
+                            </div>
+                        </div>
+                        <div class="opt-projet-listeProj-right">
+                            <div>
+                                <span class=""> 3GO</span>
+                                <span class="opt-projet-collab">60 UPDATE</span>
+                                <span class="opt-projet-collab">30/DEC/23</span>
+                                <span class="opt-projet-collab">tYPE BUTTON</span>
+                                <div>
+                                    <span class=""> 60 <i class="bi bi-heart-pulse"></i> 40 <i
+                                            class="bi bi-arrow-repeat"></i> </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opt-projet-listeProj">
+                        <div class="opt-projet-listeProj-left">
+                            <div>
+                                <a href="">Nom du projet </a> <span>3<i class="bi bi-people-fill"></i></span></div>
+                            <div>
+                                <span class="opt-projet-auteur"> OWNER</span>
+                                <span class="opt-projet-collab">collab 1</span>
+                                <span class="opt-projet-collab">collab 2</span>
+                            </div>
+                        </div>
+                        <div class="opt-projet-listeProj-right">
+                            <div>
+                                <span class=""> 3GO</span>
+                                <span class="opt-projet-collab">60 UPDATE</span>
+                                <span class="opt-projet-collab">30/DEC/23</span>
+                                <span class="opt-projet-collab">tYPE BUTTON</span>
+                                <div>
+                                    <span class=""> 60 <i class="bi bi-heart-pulse"></i> 40 <i
+                                            class="bi bi-arrow-repeat"></i> </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opt-projet-listeProj">
+                        <div class="opt-projet-listeProj-left">
+                            <div>
+                                <a href="">Nom du projet </a> <span>3<i class="bi bi-people-fill"></i></span></div>
+                            <div>
+                                <span class="opt-projet-auteur"> OWNER</span>
+                                <span class="opt-projet-collab">collab 1</span>
+                                <span class="opt-projet-collab">collab 2</span>
+                            </div>
+                        </div>
+                        <div class="opt-projet-listeProj-right">
+                            <div>
+                                <span class=""> 3GO</span>
+                                <span class="opt-projet-collab">60 UPDATE</span>
+                                <span class="opt-projet-collab">30/DEC/23</span>
+                                <span class="opt-projet-collab">tYPE BUTTON</span>
+                                <div>
+                                    <span class=""> 60 <i class="bi bi-heart-pulse"></i> 40 <i
+                                            class="bi bi-arrow-repeat"></i> </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
 
+            </div>
+            <div class="settingsOptionPage " id="settings-statistique">
+                <div class="titleBigSettings"><span>Statistique</span></div>
+                <div class="opt-stat-container-stat d-flex flex-row justify-content-between">
+                    <div class="opt-stat-left-square-container d-flex flex-column">
+                        <div class="opt-stat-left-square d-flex flex-column">
+                            <span>min like</span>
+                            <span>max like</span>
+                            <span>min redo</span>
+                            <span>max max redo</span>
+                        </div>
+                        <div class="opt-stat-left-square d-flex flex-column">
+                            <span>ami</span>
+                            <span>demande d'ami envoyer</span>
+                            <span>demande d'ami recu</span>
+                        </div>
+                    </div>
+                    <div class="opt-stat-middle-container d-flex flex-column">
+                        <div class=" d-flex flex-row">
+                            <div>
+                                <div class="imagepdp settingsimagepdp"></div>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <span>folow</span>
+                                <span>followed</span>
+
+                            </div>
+                        </div>
+                        <div class=" d-flex flex-column">
+                            <span>Projet en collaboration : 30 </span>
+                            <span>Projet solo : 10</span>
+                            <span>Projet redo : 1 </span>
+                            <span>Collaborateur : 20</span>
+                        </div>
+                    </div>
+                    <div class="opt-stat-right d-flex flex-column">
+                        <span>Date de création : [date de création]</span>
+                        <span>Date du premier post : [date du premier post]</span>
+                        <span>Date du dernier post : [date du dernier post]</span>
+                        <span>Date du premier projet en collaboration : [date de collaborateurs]</span>
+                    </div>
+                </div>
+                <div class="opt-stat-graph-container centered">
+                    <div class="opt-stat-graph">
+                    </div>
+                </div>
+
+            </div>
+            <div class="settingsOptionPage" id="settings-apparence">
+                <div class="titleBigSettings"><span>Apparence </span></div>
+                <p>Personnalisez-le à votre goût. Soyez unique et confortable sur notre site. C'est vous qui décidez !
+                    🎨✨👗
+                </p>
+                <div class="opt-apparence-DLtheme d-flex flex-row justify-content-between">
+
+                    <div class="opt-apparence-d">
+                        <div class="opt-apparence-d-titre"> dark</div>
+                    </div>
+                    <div class="opt-apparence-l">
+                        <div class="opt-apparence-l-titre">light</div>
+                    </div>
+                </div>
+
+                <div class="opt-apparence-apercu-container centered d-flex flex-row">
+                    <div class="opt-apparence-apercu"></div>
+                    <div class="opt-apparence-parametre-apercu">
+                        <div class="d-flex flex-row"><input type="color" name="apapopt-apaprence-couleur-neonrence"
+                                                            id="opt-apaprence-couleur-neon"><label
+                                for="opt-apaprence-couleur-neon">Couleur
+                            neon</label></div>
+
+                        <div class="d-flex flex-row">
+                            <button>couleur</button>
+                            <button>couleur</button>
+                            <button>couleur</button>
+                            <button>couleur</button>
+                            <button>couleur</button>
+                            <button>couleur</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="opt-apparence-save centered">
+                    <div class="d-flex flex-row">
+                        <button>Une erreur ? Restaurer</button>
+                        <button>Appliquer</button>
+                        <button>Enregistrrer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="settingsOptionPage" id="settings-mdp">
+                <div class="titleBigSettings"><span>Mot de Passe</span></div>
+                <div class="opt-mdp-changerMDP">
+                    <div class="square">
+                        <p>Contrôlez votre mot de passe comme un pro ! Choisissez parmi nos options pour personnaliser
+                            votre mot de passe, puis testez-le pour une tranquillité d'esprit totale. 🔐😃</p>
+
+                    </div>
+                    <p>une fois le mdp reinitialiser le fond noir se ferme et met succesfull</p>
+                </div>
+
+                <div class="titleSMSettings"><span>Testez le mdp</span></div>
+                <div class="centered d-flex flex-column">
+                    <d class="d-flex flex-row"><input type="text"><input type="text"></d>
+                    <button>Testew</button>
+                </div>
+            </div>
         </div>
-        <div class="settingsOptionPage">
-            <div id="#settings-projecct" class="titleBigSettings"><span>Profil</span></div>
-            <div class="titleSMSettings"><span>Badges</span></div>
-
-
-        </div>
-        <div class="settingsOptionPage">
-            <div id="#settings-confidentialite" class="titleBigSettings"><span>Profil</span></div>
-            <div class="titleSMSettings"><span>Badges</span></div>
-
-
-        </div>
-        <div class="settingsOptionPage">
-            <div id="#settings-projecct" class="titleBigSettings"><span>Profil</span></div>
-            <div class="titleSMSettings"><span>Badges</span></div>
-
-
-        </div>
-        <div class="settingsOptionPage">
-            <div id="#settings-confidentialite" class="titleBigSettings"><span>Profil</span></div>
-            <div class="titleSMSettings"><span>Badges</span></div>
-
-
-        </div>
-        <div class="settingsOptionPage">
-            <div id="#settings-projecct" class="titleBigSettings"><span>Profil</span></div>
-            <div class="titleSMSettings"><span>Badges</span></div>
-
-
-        </div>
-
     </div>
-</div>
 </div>
 
 

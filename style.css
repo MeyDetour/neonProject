@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Lora:wght@500&family=Ubuntu&display=swap');
 
 body {
     display: flex;
@@ -7,6 +8,11 @@ body {
     margin: 0;
     background-color: #444654;
     overflow-x: hidden;
+}
+.centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /*===================NEON STYLE=============*/
 /* Styles de base pour le bouton de commutation */
@@ -190,12 +196,13 @@ body {
     filter: brightness(2);
     letter-spacing: 5px;
     text-transform: uppercase;
+    font-family: 'Lora', serif;
 }
 
 .index-droit-blacksquare1, .index-droit-blacksquare2 {
     height: 50%;
     width: 100%;
-    background-color: #1d1d1d;
+    background-color: #1a1a1a;
 }
 
 .index-droit-blacksquare1 {
@@ -344,7 +351,7 @@ body {
     background-color: #575757;
     border-radius: 0px 60px 60px 0px;
     filter: drop-shadow(0 0 8px #7f05ff) brightness(2);
-    box-shadow: 0px 15px 30px #101010;;
+    box-shadow: 0px 15px 15px #101010;;
     animation: pulseheart 2s ease 0s 1 normal forwards;
 }
 
@@ -409,7 +416,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
-    border: #1d1d1d 2px solid;
+    border: #1a1a1a 2px solid;
 
 }
 .imagepdpNavbar,.imagepdpDropdown{
@@ -459,7 +466,7 @@ body {
     flex-direction: column;
     background-color: #1a1a1a;
 
-    filter: drop-shadow(0 0 15px #401d64) drop-shadow(0 0 50px #401d64) brightness(2);
+    filter: drop-shadow(0 0 15px #401d64) brightness(2);
 
 }
 
@@ -484,6 +491,7 @@ div > #neon {
     left: 45%;
     margin: 1%;
     text-decoration: none;
+    font-family: 'Lora', serif;
     color: white;
     font-size: 1.5em;
     text-shadow: 0px 0px 25px #b7b7b7;
@@ -701,7 +709,6 @@ a {
     .nav2link {
         height: 50%;
         padding: 10%;
-
         background-color: #2b2b2b;
         width: 100%;
         position: relative;
@@ -726,10 +733,13 @@ a {
     }
 
     .lien:hover {
-        color: palevioletred;
-        text-shadow: 0px 0px 25px palevioletred;
+        color: #7f05ff;
+        border: none;
+        text-shadow: 0px 0px 25px #7f05ff;
         background-color: transparent;
-        width: 50%;
+        box-shadow: none;
+        filter: none;
+        width: 24%;
         height: auto;
         z-index: 1;
 
