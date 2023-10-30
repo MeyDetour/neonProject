@@ -1,19 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Lora:wght@500&family=Ubuntu&display=swap');
 
+:root {
+    --dormeur: grey;
+    --timide: #444654;
+    --prof: #3f2f59;
+    --goodColor: green;
+    --falseColor: red;
+    --dash: #141717;
+    --joyeux: #7f05ff;
+    --simplet: #401d64;
+    --atchoum: #b7b7b7;
+    --grincheux: white;
+
+}
+
 body {
     display: flex;
     height: 100vh;
     font-family: Ubuntu;
     flex-direction: column;
     margin: 0;
-    background-color: #444654;
+    background-color: var(--timide);
     overflow-x: hidden;
 }
-.centered{
+
+.centered {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 /*===================NEON STYLE=============*/
 /* Styles de base pour le bouton de commutation */
 .naoNeon-switch {
@@ -35,9 +51,9 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color:  #141717;
-    box-shadow: 0px 0px 1em grey;
-    filter: drop-shadow(0px 0px 1em green) brightness(1.5);
+    background-color: var(--prof);
+    box-shadow: 0px 0px 1em var(--dormeur);
+    filter: drop-shadow(0px 0px 1em var(--goodColor)) brightness(1.5);
 
     transition: 0.4s;
     border-radius: 20px; /* Rayon réduit */
@@ -51,10 +67,10 @@ body {
     width: 20px; /* Largeur réduite */
     left: 3px; /* Position ajustée */
     bottom: 10px; /* Position ajustée */
-    background-color: green;
+    background-color: var(--goodColor);
     border: #141717 1px solid;
-    box-shadow: 0px 0px 1em grey;
-    filter: drop-shadow(0px 0px 1em green) brightness(1.5);
+    box-shadow: 0px 0px 1em var(--dormeur);
+    filter: drop-shadow(0px 0px 1em var(--goodColor)) brightness(1.5);
 
     transition: 0.4s;
     border-radius: 50%;
@@ -63,9 +79,9 @@ body {
 
 /* Lorsque le bouton est coché, effectuer l'animation */
 .naoNeon-switch input:checked + .slider {
-    background-color: #141717;
-    box-shadow: 0px 0px 1em grey;
-    filter: drop-shadow(0px 0px 1em red) brightness(1.5);
+    background-color: var(--dash);
+    box-shadow: 0px 0px 1em var(--dormeur);
+    filter: drop-shadow(0px 0px 1em var(--falseColor)) brightness(1.5);
 
 }
 
@@ -75,11 +91,10 @@ body {
     width: 20px; /* Largeur réduite */
     left: 55px; /* Position ajustée */
     background-color: #b80303;
-    border: #141717 1px solid;
+    border: var(--dash) 1px solid;
     box-shadow: 0px 0px 1em grey;
-    filter: drop-shadow(0px 0px 1em red) brightness(1.5);
+    filter: drop-shadow(0px 0px 1em var(--falseColor)) brightness(1.5);
 }
-
 
 
 /*===================FIN NEON STYLE=============*/
@@ -99,7 +114,7 @@ body {
     position: relative;
     width: 60%;
     font-size: 10em;
-    background-color: #372c48;
+    background-color: var(--simplet);
     animation: slideleft 2s ease 0s 1 normal forwards;
 }
 
@@ -137,13 +152,13 @@ body {
 }
 
 .index-neonbar1, .index-neonbar3 {
-    background-color: #3f2f59;
-    box-shadow: 0px 0px 4em 20px #3f2f59;
+    background-color: var(--simplet);
+    box-shadow: 0px 0px 4em 20px var(--simplet);
 }
 
 .index-neonbar2, .index-neonbar4 {
-    background-color: #b7b7b7;
-    box-shadow: 0px 0px 4em 20px #b7b7b7;
+    background-color: var(--atchoum);
+    box-shadow: 0px 0px 4em 20px var(--atchoum);
 }
 
 .index-neonbar1 {
@@ -191,8 +206,8 @@ body {
 }
 
 .index-neon-title {
-    color: #b7b7b7;
-    text-shadow: 0px 0px 25px #b7b7b7;
+    color: var(--atchoum);
+    text-shadow: 0px 0px 25px var(--atchoum);
     filter: brightness(2);
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -334,9 +349,10 @@ body {
 }
 
 /*========================Fin de lq page d'accueil debut de la description des navbar ============================================*/
-.navbarMain{
+.navbarMain {
     width: 100%;
 }
+
 .nav1 {
     display: flex;
     flex-direction: row;
@@ -346,12 +362,12 @@ body {
     width: 90%;
     height: 8vh;
     position: relative;
-    color: #ffffff;
+    color: var(--grincheux);
 
-    background-color: #575757;
+    background-color: var(--timide);
     border-radius: 0px 60px 60px 0px;
-    filter: drop-shadow(0 0 8px #7f05ff) brightness(2);
-    box-shadow: 0px 15px 15px #101010;;
+    filter: drop-shadow(0 0 8px var(--joyeux)) brightness(2);
+    box-shadow: 0px 15px 15px var(--dash);;
     animation: pulseheart 2s ease 0s 1 normal forwards;
 }
 
@@ -363,8 +379,8 @@ body {
     top: 0%;
     left: 0%;
     z-index: -1;
-    background-color: #1a1a1a;
-    box-shadow: 10px 0px 15px #181818;
+    background-color: var(--dash);
+    box-shadow: 10px 0px 15px var(--dash);
     border-radius: 0px 60px 60px 0px;
     transition: width 1s;
 }
@@ -384,25 +400,23 @@ body {
     display: block;
     margin-right: 30px;
     margin-left: 30px;
-
+    color: var(--dash);
 }
 
 
-.icone-right-navbar1  {
+.icone-right-navbar1 {
     padding-right: 10px;
-    padding-left: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: #1a1a1a;
     font-size: 2em;
 
 }
-.icone-right-navbar-container-nav1{
+
+.icone-right-navbar-container-nav1 {
     position: absolute;
     right: 0%;
-
-    width: 470px;
+    width: 488px;
 
 }
 
@@ -416,14 +430,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
-    border: #1a1a1a 2px solid;
+    border: var(--dash) 2px solid;
 
 }
-.imagepdpNavbar,.imagepdpDropdown{
+
+.imagepdpNavbar, .imagepdpDropdown {
     width: 55px;
     height: 55px;
     margin-right: 3%;
 }
+
 @keyframes pulseheart {
     0% {
         animation-timing-function: ease-out;
@@ -466,15 +482,15 @@ body {
     flex-direction: column;
     background-color: #1a1a1a;
 
-    filter: drop-shadow(0 0 15px #401d64) brightness(2);
+    filter: drop-shadow(0 0 15px var(--simplet)) brightness(2);
 
 }
 
-.in-width{
+.in-width {
     width: 16%;
 }
 
-.out-width{
+.out-width {
     width: 16%;
 }
 
@@ -492,9 +508,9 @@ div > #neon {
     margin: 1%;
     text-decoration: none;
     font-family: 'Lora', serif;
-    color: white;
+    color: var(--grincheux);
     font-size: 1.5em;
-    text-shadow: 0px 0px 25px #b7b7b7;
+    text-shadow: 0px 0px 25px var(--atchoum);
 
 }
 
@@ -511,7 +527,7 @@ div > #neon {
 
 .lien {
     text-decoration: none;
-    color: white;
+    color: var(--grincheux);
     padding-left: 15%;
 
     padding-top: 6%;
@@ -529,8 +545,8 @@ div > #neon {
     height: 7%;
     border-radius: 0px 45px 45px 0px;
     position: relative;;
-    filter: drop-shadow(0 0 8px #7f05ff) brightness(1);
-    box-shadow: 0px 0px 30px #101010;;
+    filter: drop-shadow(0 0 8px var(--joyeux)) brightness(1);
+    box-shadow: 0px 0px 30px var(--dash);;
 }
 
 .boutonburger {
@@ -538,51 +554,58 @@ div > #neon {
     top: 0%;
     left: 0%;
     display: none;
-    color: white;
+    color: var(--grincheux);
     font-size: 3em;
     margin-left: 2%;
-    text-shadow: 0px 0px 25px #b7b7b7;
+    text-shadow: 0px 0px 25px var(--atchoum);
 
 }
+
 a {
     text-decoration: none;
 }
-.imagepdpDropdown{
+
+.imagepdpDropdown {
     position: absolute;
     top: 0.5em;
     right: 0em;
     display: none;
 }
-.display-block{
+
+.display-block {
     display: block;
 }
-.dropdownmenu{
+
+.dropdownmenu {
 
     display: none;
     position: absolute;
     top: 6em;
     right: 1em;
 }
-.display-block{
+
+.display-block {
     display: block;
 }
-.iconeDropdown{
-    color: white;
+
+.iconeDropdown {
+    color: var(--grincheux);
     font-size: 2em;
-    background-color: #1a1a1a;
+    background-color: var(--dash);
     padding: 15px;
     border-radius: 50%;
     filter: brightness(2);
 
 }
 
-.dropdownmenu> ul {
+.dropdownmenu > ul {
     list-style: none;
     text-align: center;
 
 
 }
-.dropdownmenu> ul > li{
+
+.dropdownmenu > ul > li {
     margin-bottom: 20px;
 }
 
@@ -610,15 +633,18 @@ a {
         transform: translateX(-250px);
     }
 }
+
 @media only screen and (max-width: 1680px) {
     .nav1::after {
         width: 93%;
     }
+
     .ouvert-nav1::after {
         width: 68%;
         transition: width 1s;
     }
 }
+
 @media only screen and (max-width: 1500px) {
 
     .ouvert-nav1::after {
@@ -626,28 +652,34 @@ a {
         transition: width 1s;
     }
 }
+
 @media only screen and (max-width: 1360px) {
     .nav1::after {
         width: 90%;
     }
+
     .ouvert-nav1::after {
         width: 63%;
         transition: width 1s;
     }
 }
+
 @media only screen and (max-width: 1285px) {
     .nav1::after {
         width: 90%;
     }
+
     .ouvert-nav1::after {
         width: 60%;
         transition: width 1s;
     }
 }
+
 @media only screen and (max-width: 1190px) {
     .nav1::after {
         width: 90%;
     }
+
     .ouvert-nav1::after {
         width: 58%;
         transition: width 1s;
@@ -666,19 +698,24 @@ a {
         right: 0%;
         top: 11%;
     }
-    .nav1{
+
+    .nav1 {
         width: 100%;
     }
+
     .nav1::after {
         width: 90%;
     }
+
     .imagepdpDropdown {
         display: block;
 
     }
+
     .boutonburger {
         display: block;
     }
+
     .nav2 {
         width: 0%;
         flex-direction: column;
@@ -701,7 +738,7 @@ a {
         display: none;
     }
 
-    .in > div > .lien{
+    .in > div > .lien {
         display: block;
     }
 
@@ -720,7 +757,7 @@ a {
     .lien {
         text-decoration: none;
         text-wrap: normal;
-        color: white;
+        color: var(--grincheux);
         margin-top: 2%;
         margin-bottom: 1%;
         padding-left: 0%;
@@ -733,9 +770,9 @@ a {
     }
 
     .lien:hover {
-        color: #7f05ff;
+        color: var(--joyeux);
         border: none;
-        text-shadow: 0px 0px 25px #7f05ff;
+        text-shadow: 0px 0px 25px var(--joyeux);
         background-color: transparent;
         box-shadow: none;
         filter: none;
@@ -744,14 +781,17 @@ a {
         z-index: 1;
 
     }
-    .dropdown{
+
+    .dropdown {
         display: flex
     }
-    .icone-right-navbar-container-nav1{
-        display: none ;
+
+    .icone-right-navbar-container-nav1 {
+        display: none;
     }
 
 }
+
 @media only screen and (max-width: 804px) {
     .nav1::after {
         width: 80%;
@@ -759,3 +799,4 @@ a {
 
 
 }
+
