@@ -3,12 +3,13 @@
 :root {
     --dormeur: grey;
     --timide: #444654;
-    --prof: #3f2f59;
+
     --goodColor: green;
     --falseColor: red;
     --dash: #141717;
     --joyeux: #7f05ff;
     --simplet: #401d64;
+    --prof: #3f2f59;
     --atchoum: #b7b7b7;
     --grincheux: white;
 
@@ -22,6 +23,7 @@ body {
     margin: 0;
     background-color: var(--timide);
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .centered {
@@ -29,7 +31,12 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+.p-abs{
+    position: absolute;
+}
+.p-rel{
+    position: relative;
+}
 /*===================NEON STYLE=============*/
 /* Styles de base pour le bouton de commutation */
 .naoNeon-switch {
@@ -409,6 +416,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     font-size: 2em;
 
 }
@@ -480,7 +488,7 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    background-color: #1a1a1a;
+    background-color: var(--dash);
 
     filter: drop-shadow(0 0 15px var(--simplet)) brightness(2);
 
@@ -515,7 +523,7 @@ div > #neon {
 }
 
 .fond {
-    width: 77vw;
+    width: 82vw;
     margin-top: 9%;
     height: 100%;
     position: absolute;

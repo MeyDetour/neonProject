@@ -1,12 +1,5 @@
 let navbar = document.querySelector('.navbarMain')
-const timide = "#444654";
-const goodColor = "green";
-const falseColor = "red";
-const prof = "#3f2f59";
-const joyeux = "#7f05ff";
-const simplet = "#401d64";
-const atchoum = "#b7b7b7";
-const grincheux = "white";
+
 
 navbar.innerHTML = ` 
  
@@ -141,37 +134,3 @@ burger.addEventListener('click', () => {
             icone.classList.remove('survol')
         })
     });
-const colors = [
-    'timide',
-    'goodColor',
-    'falseColor',
-    'prof',
-    'joyeux',
-    'simplet',
-    'atchoum',
-    'grincheux'
-];
-
-const root = document.documentElement;
-
-colors.forEach(colorName => {
-    // Classe de texte
-    const textClass = `.tx-${colorName}`;
-    addStyleRule(textClass, `color: var(--${colorName});`);
-
-    // Classe de fond
-    const bgClass = `.bg-${colorName}`;
-    addStyleRule(bgClass, `background-color: var(--${colorName});`);
-
-    // Classe de bordure
-    const borderClass = `.border-${colorName}`;
-    addStyleRule(borderClass, `border: 3px solid var(--${colorName});`);
-});
-
-// Fonction pour ajouter une règle de style dynamiquement
-function addStyleRule(selector, rule) {
-    const styleElement = document.createElement('style');
-    document.head.appendChild(styleElement);
-    styleElement.sheet.insertRule(`${selector} { ${rule} }`);
-
-}
