@@ -101,7 +101,7 @@ body {
 
 }
 .text-container {
-    font-size: 17px;
+
     width: 80%;
 
     height: 80%;
@@ -112,6 +112,7 @@ body {
 }
 
 #text {
+    font-size: 30px;
     white-space: pre-wrap;
     overflow: hidden;
     animation: revealText 8s steps(200) forwards;
@@ -136,9 +137,3 @@ body {
 }
 
 
-
-@keyframes revealText {
-    to {
-        width: 100%;
-    }
-}
