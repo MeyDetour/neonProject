@@ -112,7 +112,7 @@ body {
 }
 
 #text {
-    font-size: 30px;
+    font-size: 25px;
     white-space: pre-wrap;
     overflow: hidden;
     animation: revealText 8s steps(200) forwards;
