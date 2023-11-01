@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Lora:wght@500&family=Ubuntu&display=swap');
 
 :root {
-    --dormeur: grey;
-    --timide: #444654;
-
-    --goodColor: green;
     --falseColor: red;
-    --dash: #141717;
-    --joyeux: #7f05ff;
-    --simplet: #401d64;
     --prof: #3f2f59;
-    --atchoum: #b7b7b7;
+    --dash: #141717;
     --grincheux: white;
+    --goodColor: green;
+    --violet1: #6a0be5;
+
+    --joyeux: #7f05ff;
+    --simplet: #3a1f57;    /* Violet plus clair */
+    --timide: #444654;  /* Noir-Gris foncé */
+    --dormeur: grey; /* Noir-Gris clair */
+    --atchoum: #b7b7b7;/* Blanc */
 
 }
 

@@ -1,23 +1,17 @@
-const timide = "#444654";
-const goodColor = "green";
-const falseColor = "red";
-const prof = "#3f2f59";
-const joyeux = "#7f05ff";
-const simplet = "#401d64";
-const atchoum = "#b7b7b7";
-const grincheux = "white";
+
 // CREE TOUS LES TX-COLOR ET BG-COLOR BORDER-COLOR
 const colors = [
-    'dormeur',
-    'timide',
-    'goodColor',
     'falseColor',
+    'prof',
     'dash',
+    'grincheux',
+    'goodColor',
+    'violet1',
     'joyeux',
     'simplet',
-    'prof',
-    'atchoum',
-    'grincheux'
+    'timide',
+    'dormeur',
+    'atchoum'
 ];
 
 
@@ -46,13 +40,7 @@ percentages.forEach(percentageValue => {
     addStyleRule(`.btm-${percentageValue}`, `bottom: ${percentageValue}%;`);
     addStyleRule(`.right-${percentageValue}`, `right: ${percentageValue}%;`);
     addStyleRule(`.br-${percentageValue}`, `border-radius: ${percentageValue}px;`);
-
     addStyleRule(`.w-${percentageValue}`, `width: ${percentageValue}%;`);
 });
 
 // Fonction pour ajouter une règle de style dynamiquement
-function addStyleRule(selector, rule) {
-    const styleElement = document.createElement('style');
-    document.head.appendChild(styleElement);
-    styleElement.sheet.insertRule(`${selector} { ${rule} }`);
-}
