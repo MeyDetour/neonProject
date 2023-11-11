@@ -80,14 +80,33 @@ height: 1150px;
     height: 200px;
     margin-right: 20px;
 }
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.hover-grayscale{
+    filter: grayscale(90%);
+}
 .profil-modifier-nom{
     display: flex;
     flex-direction: column;
-
 }
 #Porfilbio{
     width: 70%;
     height: 300px;
+    background-color: transparent;
+    border: 2px var(--prof) solid;
+}
+textarea{
+    width: 70%;
+    height: 200px;
+}
+textarea:focus{
+    background-color: var(--prof);
 }
 .opt-profil-icone-choisi{
     width: 20%;
