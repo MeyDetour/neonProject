@@ -78,6 +78,7 @@ height: 1150px;
 .imagepdp-Settingsprofil{
     width: 200px;
     height: 200px;
+    margin-right: 20px;
 }
 .profil-modifier-nom{
     display: flex;
