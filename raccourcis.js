@@ -11,6 +11,7 @@ const colors = [
     'simplet',
     'timide',
     'dormeur',
+    'c-script',
     'atchoum'
 ];
 

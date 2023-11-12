@@ -22,11 +22,11 @@ a{
 .settings-option-bar{
     display: flex;
     justify-content: space-around;
-    border-bottom: #282828 3px solid;
+    border-bottom: var(--dash) 3px solid;
 }
 .settings-option{
     text-decoration: none;
-    color: #1a1a1a;
+    color: var(--c-script);
     margin-right: 20px;
     display: flex;
     flex-direction: row;
@@ -36,7 +36,7 @@ a{
 }
 
 .settings-option>i{
-    color: #1a1a1a;
+    color: var(--c-script);
     font-size: 2em;
     margin-right: 5px;
 }
@@ -44,27 +44,33 @@ a{
 .setting-container-menu{
 height: 1150px;
     width: 100%;
-    background-color: #687d80;
     position: relative;
     overflow-y: hidden;
     display: flex;
     flex-direction: column;
 
 }
-
+p{
+    color: var(--dash);
+}
+.section{
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
 /*############## settings general  #################*/
 .titleBigSettings{
     width: 35%;
+    color: var(--c-script);
     font-size: 3em;
-    border-bottom: black 3px solid ;
+    border-bottom: var(--dash) 3px solid ;
     margin-bottom: 60px;
 
 }
 .titleSMSettings{
     width: 24%;
+    color: var(--c-script);
     font-size: 2em;
-    color: #0d0d0d;
-    border-bottom: #0d0d0d 3px solid ;
+    border-bottom: var(--dash) 3px solid ;
     margin-bottom: 30px;
     margin-top: 60px;
 
@@ -91,29 +97,88 @@ height: 1150px;
 .hover-grayscale{
     filter: grayscale(90%);
 }
+
 .profil-modifier-nom{
     display: flex;
     flex-direction: column;
 }
-#Porfilbio{
-    width: 70%;
-    height: 300px;
-    background-color: transparent;
-    border: 2px var(--prof) solid;
-}
-textarea{
-    width: 70%;
-    height: 200px;
-}
-textarea:focus{
-    background-color: var(--prof);
-}
-.opt-profil-icone-choisi{
-    width: 20%;
-    height: 300px;
-    background-color: black;
+/*========================BIO ET ICONE =================*/
+#Porfilbio:focus{
+    border: var(--simplet) 4px solid;
+    outline: none;
 }
 
+#Porfilbio, #formIcon{
+    height: 300px;
+    padding: 20px;
+    border-radius: 30px ;
+    background: rgba(0, 0, 0, 0.07);
+    border: 2px var(--prof) solid;
+}
+
+#formIcon{
+    overflow-y: scroll;
+}
+
+.opt-profil-icone-choisi{
+  height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.opt-profil-icone-choisi input {
+    display: none; /* Pour masquer les boutons radio par défaut */
+}
+
+.opt-profil-icone-choisi label {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+.opt-profil-icone-choisi img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Ajout de styles pour indiquer la sélection */
+.opt-profil-icone-choisi input:checked + label {
+    border: 3px solid var(--joyeux); /* Couleur de la bordure pour indiquer la sélection */
+}
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: rgb(192, 192, 192);
+    border-image: initial;
+}
+legend {
+    display: block;
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+/*==============================================*/
 .reseaux{
     width: 140px;
     height: 94px;

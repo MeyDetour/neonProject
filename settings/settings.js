@@ -7,12 +7,11 @@ fetch("https://api.github.com/users/MeyDetour")
 .then(data =>{
     console.log(data)
     document.querySelector('.profil-modifier-nom').innerHTML = `
-        <h1>${data['name']}</h1> 
-        <h6 class="tx-timide">${data['login']}</h6>
+        <h1 class="tx-dash">${data['name']}</h1> 
+        <h6 class="tx-dash">${data['login']}</h6>
     `
     document.getElementById('Porfilbio').value = data['bio']
 })
-
 
 
 
@@ -30,3 +29,7 @@ imadepdp.addEventListener('mouseout',()=>{
     imadepdp.classList.toggle('hover-grayscale')
     imadepdp.innerHTML = ''
 })
+
+
+
+

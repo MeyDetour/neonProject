@@ -7,7 +7,7 @@
     --grincheux: white;
     --goodColor: green;
     --violet1: #6a0be5;
-
+    --c-script : #22034b ;
     --joyeux: #7f05ff;
     --simplet: #3a1f57;    /* Violet plus clair */
     --timide: #444654;  /* Noir-Gris foncé */
@@ -26,7 +26,10 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
 }
-
+::selection {
+    color: var(--joyeux);
+    background-color: var(--simplet);
+}
 .centered {
     display: flex;
     align-items: center;
@@ -431,10 +434,6 @@ body {
 
 .imagepdp {
     background-image: url("image/pd2.png");
-
-    filter: none;
-
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
