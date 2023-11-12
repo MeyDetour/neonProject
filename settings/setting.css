@@ -26,7 +26,7 @@ a{
 }
 .settings-option{
     text-decoration: none;
-    color: var(--c-script);
+    color: var(--dash);
     margin-right: 20px;
     display: flex;
     flex-direction: row;
@@ -36,7 +36,7 @@ a{
 }
 
 .settings-option>i{
-    color: var(--c-script);
+    color: var(--dash);
     font-size: 2em;
     margin-right: 5px;
 }
@@ -51,6 +51,7 @@ height: 1150px;
 
 }
 p{
+    font-size: 1.5em;
     color: var(--dash);
 }
 .section{
@@ -77,7 +78,8 @@ p{
 
 }
 .settingsOptionPage{
-    margin-bottom: 20%;
+    margin-bottom: 200%;
+
 }
 
 /*############## OPTION PROFIL #################*/
@@ -102,20 +104,24 @@ p{
     display: flex;
     flex-direction: column;
 }
-/*========================BIO ET ICONE =================*/
+/*================*/
 #Porfilbio:focus{
     border: var(--simplet) 4px solid;
     outline: none;
 }
-
+.bg-dash-transparent{
+    background: rgba(0, 0, 0, 0.07);
+    border-radius: 30px;
+    border: var(--prof) 3px solid;
+}
 #Porfilbio, #formIcon{
     height: 300px;
     padding: 20px;
     border-radius: 30px ;
-    background: rgba(0, 0, 0, 0.07);
-    border: 2px var(--prof) solid;
-}
 
+    border: 2px var(--prof) solid;
+    background: rgba(0, 0, 0, 0.07);
+}
 #formIcon{
     overflow-y: scroll;
 }
@@ -151,102 +157,28 @@ p{
     object-fit: cover;
 }
 
-/* Ajout de styles pour indiquer la sélection */
 .opt-profil-icone-choisi input:checked + label {
     border: 3px solid var(--joyeux); /* Couleur de la bordure pour indiquer la sélection */
 }
-fieldset {
-    display: block;
-    margin-inline-start: 2px;
-    margin-inline-end: 2px;
-    padding-block-start: 0.35em;
-    padding-inline-start: 0.75em;
-    padding-inline-end: 0.75em;
-    padding-block-end: 0.625em;
-    min-inline-size: min-content;
-    border-width: 2px;
-    border-style: groove;
-    border-color: rgb(192, 192, 192);
-    border-image: initial;
-}
-legend {
-    display: block;
-    padding-inline-start: 2px;
-    padding-inline-end: 2px;
-    border-width: initial;
-    border-style: none;
-    border-color: initial;
-    border-image: initial;
-}
-/*==============================================*/
-.reseaux{
-    width: 140px;
-    height: 94px;
-    border-radius: 30px;
-    font-size: 1.6em;
+/*================*/
 
-    display: flex;
-
-    flex-direction: column;
-    justify-content: start;
+.lien-reseaux:hover{
+ filter: drop-shadow(0px 0px 1em var(--simplet));
 }
-.reseaux-fb{
-    border: #1168FC 2px solid;
-    color: #1168FC;
-}
-.reseaux-fb:hover{
-    background-color:  #1168FC ;
-    color: white;
-}
-.reseaux-whatsapp{
-    border: #85EB6C 2px solid;
-    color: #85EB6C;
-}
-.reseaux-whatsapp:hover{
-    background-color:  #85EB6C ;
-    color: white;
-}
-.reseaux-twitter{
-    border: #2F9EF1 2px solid;
-    color: #2F9EF1;
-}
-.reseaux-twitter:hover{
-    background-color:  #2F9EF1 ;
-    color: white;
-}
-.reseaux-x{
-    border: #080808 2px solid;
-    color: #080808;
-}
-.reseaux-x:hover{
-    background-color:  #080808 ;
-    color: white;
-}
-
-.reseaux-insta-bordure{
-    background: radial-gradient(100% 100% at 0% 100% , #FAC734 20%, #E8453A , #E46CD7 , #8B6FFD 120%);
-    border: 0;
-}
-.reseaux-insta{
-    height: 100%;
-    width: 100%;
-    background: white;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #E46CD7;
-    font-size: 1.8em;
-}
-.reseaux-insta-bordure:hover .reseaux-insta{
-    background: transparent;
-    color: white;
+.opt-profil-btn-add-réseau{
+    width: 50px;
+    height: 50px ;
 
 }
+.opt-profil-btn-add-réseau:hover{
+    background-color: var(--simplet);
+    color: var(--joyeux);
+}
+/*================*/
 .profil-badge{
 
     width: 100%;
-    background-color: #401d64;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -275,11 +207,15 @@ legend {
 .opt-allnotif-ic-false{
     color: red;
 }
-
-
+.off-size{
+    font-size: 0px;
+}
 .opt-notif-type-container{
     height: 450px;
     width: 100%;
+}
+.opt-notif-contenu{
+    display: block;
 }
 .opt-notif-type-select{
     display: flex;
@@ -303,7 +239,10 @@ legend {
     width: 400px;
     height: 400px;
 }
-
+.checkbox-label{
+    display: flex;
+    flex-direction: row;
+}
 
 /*############## OPTION CONFIDENTIALITE #################*/
 .opt-confidentialite-informationTag{
@@ -314,7 +253,7 @@ legend {
     display: flex;
     flex-direction: column;
     align-items: center;
-      animation: flip-scale-2-hor-top 0.5s linear both;
+    animation: flip-scale-2-hor-top 3s linear infinite;
 
 }
 
